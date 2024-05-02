@@ -5,6 +5,7 @@ export const useGuestAnimeStore = defineStore("guestAnimeStore", {
     return {
       animes: [],
       attempts: 0,
+      animeNameInput: "",
     };
   },
   getters: {},

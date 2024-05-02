@@ -22,5 +22,77 @@
     "author": "Akira Toriyama",
     "image": "dragonball.jpg",
     "year": "1984"
+  },
+  {
+    "id": 4,
+    "name": "Bleach",
+    "gender": "Shonen",
+    "author": "Tite Kubo",
+    "image": "bleach.jpg",
+    "year": "2001"
+  },
+  {
+    "id": 5,
+    "name": "Attack on Titan",
+    "gender": "Shonen",
+    "author": "Hajime Isayama",
+    "image": "attackontitan.jpg",
+    "year": "2009"
+  },
+  {
+    "id": 6,
+    "name": "My Hero Academia",
+    "gender": "Shonen",
+    "author": "Kohei Horikoshi",
+    "image": "myheroacademia.jpg",
+    "year": "2014"
+  },
+  {
+    "id": 7,
+    "name": "Death Note",
+    "gender": "Shonen",
+    "author": "Tsugumi Ohba",
+    "image": "deathnote.jpg",
+    "year": "2003"
+  },
+  {
+    "id": 8,
+    "name": "One Punch Man",
+    "gender": "Shonen",
+    "author": "ONE",
+    "image": "onepunchman.jpg",
+    "year": "2009"
+  },
+  {
+    "id": 9,
+    "name": "Tokyo Ghoul",
+    "gender": "Shonen",
+    "author": "Sui Ishida",
+    "image": "tokyoghoul.jpg",
+    "year": "2011"
+  },
+  {
+    "id": 10,
+    "name": "Black Clover",
+    "gender": "Shonen",
+    "author": "Yūki Tabata",
+    "image": "blackclover.jpg",
+    "year": "2015"
+  },
+  {
+    "id": 11,
+    "name": "Demon Slayer",
+    "gender": "Shonen",
+    "author": "Koyoharu Gotouge",
+    "image": "demonslayer.jpg",
+    "year": "2016"
+  },
+  {
+    "id": 12,
+    "name": "Jujutsu Kaisen",
+    "gender": "Shonen",
+    "author": "Gege Akutami",
+    "image": "jujutsukaisen.jpg",
+    "year": "2018"
   }
 ]

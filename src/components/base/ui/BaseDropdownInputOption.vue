@@ -1,0 +1,33 @@
+<script setup>
+const props = defineProps({
+  item: {
+    type: Object,
+    required: true,
+  },
+});
+</script>
+
+<template>
+  <div class="card">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img
+            src="https://bulma.io/assets/images/placeholders/96x96.png"
+            alt="Placeholder image"
+          />
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{ props.item.name }}</p>
+        <p class="subtitle is-6">{{ props.item.author }}</p>
+      </div>
+    </div>
+  </div>
+</template>
+<style scoped>
+.card {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+</style>

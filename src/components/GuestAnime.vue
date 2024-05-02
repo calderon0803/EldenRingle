@@ -1,9 +1,18 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true,
-  },
+import BaseDropdownInput from "./base/ui/BaseDropdownInput.vue";
+import BaseAnimeAttempt from "./base/ui/BaseAnimeAttempt.vue";
+import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
+import { ref, computed } from "vue";
+
+const guestAnimeStore = useGuestAnimeStore();
+
+const animeNameInput = ref(null);
+
+const searchAnime = computed(() => {
+  const filteredAnimes = guestAnimeStore.animes.filter((anime) =>
+    anime.name.toLowerCase().includes(animeNameInput.value)
+  );
+  return filteredAnimes;
 });
 </script>
 
@@ -20,19 +29,18 @@ defineProps({
         </div>
       </div>
       <footer class="card-footer">
-        <span class="card-footer-item">Pista 1</span>
-        <span class="card-footer-item">Pista 2</span>
-        <span class="card-footer-item">Pista 3</span>
+        <span class="card-footer-item">Género</span>
+        <span class="card-footer-item">Año</span>
+        <span class="card-footer-item">Autor</span>
       </footer>
     </div>
-    <fieldset class="input-flex-group mx-3">
-      <input class="input mb-1" type="text" placeholder="Nombra un anime" />
-      <button class="button icon-button">
-        <span class="icon">
-          <i class="mdi mdi-arrow-right" />
-        </span>
-      </button>
-    </fieldset>
+    <BaseDropdownInput
+      :game-options="searchAnime"
+      @update:model-value="animeNameInput = $event"
+    />
+    <!-- <div class="section__row section__row--left">
+      <BaseAnimeAttempt />
+    </div> -->
   </div>
 </template>
 
@@ -40,25 +48,6 @@ defineProps({
 .game-panel {
   width: 30%;
   height: 100%;
-}
-
-.button {
-  margin: 0.5rem auto;
-}
-
-.input-flex-group {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-top: 1rem;
-  width: auto;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  &--general-data {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
