@@ -1,21 +1,18 @@
-<script>
-export default {
-  name: "App",
-};
-</script>
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from "./components/HelloWorld.vue";
+import GuestAnime from "./components/GuestAnime.vue";
+import { onMounted } from "vue";
+import { useDataLoader } from "@/composables/dataLoader.js";
+import TheToast from "./components/layout/TheToast.vue";
+onMounted(async () => {
+  await useDataLoader();
+});
 </script>
 
 <template>
   <div class="grid">
-    <div class="main">
-      <img alt="Vue logo" src="./assets/logo.png" />
-      <HelloWorld msg="Vue 3 + Vite Template" />
-    </div>
+    <GuestAnime />
   </div>
+  <TheToast />
 </template>
 
 <style lang="scss">
@@ -28,7 +25,8 @@ import HelloWorld from "./components/HelloWorld.vue";
 }
 
 .grid {
-  display: grid;
+  display: flex;
+  justify-content: center;
   position: relative;
   grid-template-rows: app-variables.$height-header 1fr;
   grid-template-columns: 1fr;

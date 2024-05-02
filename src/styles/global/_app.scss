@@ -1,22 +1,124 @@
 @use "@/styles/variables" as app-variables;
 
-/* Hide scrollbar for IE, Edge and Firefox */
 html {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar {
-  display: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: app-variables.$app-font;
+  color: app-variables.$app-body-text;
+  background-color: app-variables.$app-background-color;
+  line-height: 1.25;
 }
 
-a {
-  color: app-variables.$app-font-color;
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+a,
+.link {
+  color: app-variables.$color-text-solid;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.12rem;
+  text-decoration: none;
+  transition: 0.16s ease-in;
+  width: auto;
 
   &:hover {
-    color: app-variables.$primary-color;
+    color: app-variables.$color-ui;
   }
+}
+
+.title {
+  color: app-variables.$app-font-color;
+
+  &__h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: app-variables.$app-font-color;
+
+    &--regular {
+      font-weight: 400;
+    }
+
+    &--med {
+      font-weight: 500;
+    }
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  &__h2 {
+    color: app-variables.$app-font-color;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    margin-bottom: 0.75rem;
+
+    &--regular {
+      font-weight: 400;
+    }
+
+    &--med {
+      font-weight: 500;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__h3 {
+    color: app-variables.$app-font-color;
+    opacity: 0.8;
+    font-size: 1.12rem;
+    line-height: 1.25em;
+    margin: 0;
+
+    &--regular {
+      font-weight: 400;
+    }
+
+    &--med {
+      font-weight: 500;
+    }
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+}
+
+.sub-title {
+  color: app-variables.$app-font-color;
+  opacity: 0.6;
+  font-size: 14px;
+  line-height: 0.75em;
+  margin: 0.25rem 0;
+}
+
+.sub-header {
+  font-size: app-variables.$subheader-font-size;
+  color: app-variables.$app-body-text;
+}
+
+p {
+  color: app-variables.$color-text-med;
+}
+
+input {
+  accent-color: app-variables.$color-ui;
 }
 
 /* Modals style */
@@ -36,7 +138,6 @@ a {
 }
 
 /* Select style */
-
 .select {
   color: app-variables.$app-font-color;
   font-family: app-variables.$app-font;
@@ -47,4 +148,325 @@ a {
   border-radius: 0;
   border-bottom: 1px solid app-variables.$secondary-color;
   padding: 0;
+}
+
+/* CARDS */
+.card {
+  background-color: app-variables.$color-light;
+  box-shadow: app-variables.$box-shadow;
+  border-radius: 6px;
+  padding: 1.5rem;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: app-variables.$box-shadow-hover;
+  }
+}
+
+/* LayOut */
+.main {
+  // height: 100%;
+  min-height: 100vh;
+
+  // padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+
+  &__content {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__aside {
+    min-width: 25%;
+    max-width: 412px;
+    max-height: calc(100vh - 4rem);
+    overflow: auto;
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #ffffff;
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 3;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: auto;
+  padding: 0 3rem;
+}
+
+/* Section */
+.section {
+  margin-top: 0.5rem;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+
+    // height: auto;
+
+    &--left {
+      width: 75%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--right {
+      width: 25%;
+    }
+  }
+}
+
+/* Buttons */
+.btn {
+  border-radius: 4px;
+  border: none;
+  box-shadow: app-variables.$box-shadow;
+  color: app-variables.$app-font-secondary-color;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.5rem;
+  height: 40px;
+  display: flex;
+  gap: 0.25rem;
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.5rem - 1px) 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 0.2s ease-out;
+
+  &__primary {
+    background: app-variables.$primary-color;
+
+    &--light {
+      background: app-variables.$primary-color-light;
+    }
+
+    &--outlined {
+      background: app-variables.$color-light;
+      color: app-variables.$primary-color;
+      border: 1px solid app-variables.$primary-color;
+
+      &:hover {
+        background: app-variables.$primary-color;
+        color: app-variables.$color-light;
+      }
+    }
+
+    &--icon {
+      background: app-variables.$primary-color;
+      max-width: 48px;
+      padding: 0;
+
+      .icon-img {
+        margin: 0.5rem;
+      }
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &__secondary {
+    background: app-variables.$secondary-color;
+    padding: 0.5rem 1.75rem;
+    border-radius: 100px;
+
+    &--light {
+      background: app-variables.$secondary-color-light;
+    }
+
+    &--outlined {
+      background: app-variables.$color-light;
+      color: app-variables.$primary-color-light;
+      border: 1px solid app-variables.$primary-color;
+
+      &:hover {
+        color: app-variables.$color-light;
+        border: 1px solid app-variables.$primary-color;
+        background-color: app-variables.$color-light;
+      }
+    }
+
+    &--icon {
+      background: app-variables.$secondary-color;
+      max-width: 48px;
+      padding: 0;
+
+      .icon-img {
+        margin: 0.5rem;
+      }
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  i {
+    font-size: 24px;
+  }
+
+  &:hover {
+    filter: brightness(110%);
+    box-shadow: app-variables.$box-shadow-hover;
+  }
+}
+
+.button {
+  background-color: transparent;
+  color: app-variables.$color-white;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0;
+
+  &.icon-button {
+    background-color: app-variables.$primary-color-light;
+    border-radius: 12px;
+    max-height: 40px;
+    max-width: 40px;
+    padding: 0;
+    margin: 5px 0;
+    box-shadow: 0 1px 2px rgb(31 41 55 / 20%);
+    transition: 0.16s ease-in;
+
+    &:hover {
+      background-color: app-variables.$primary-color;
+      box-shadow: inset 0 0 0 1px app-variables.$primary-color;
+      border-color: #e0e8ff;
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 0 1px app-variables.$primary-color;
+      border-color: #e0e8ff;
+    }
+  }
+
+  &.icon-link {
+    color: app-variables.$app-body-text;
+    max-height: 40px;
+    max-width: 40px;
+    padding: 0;
+    transition: 0.16s ease-in;
+
+    &:hover {
+      color: app-variables.$primary-color;
+    }
+  }
+
+  &:hover {
+    color: app-variables.$color-white;
+  }
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+.geojson-popup,
+.demands-popup {
+  pointer-events: none;
+
+  .leaflet-popup-content-wrapper {
+    a {
+    }
+  }
+
+  .leaflet-popup-tip-container {
+    padding: 0;
+  }
+
+  .leaflet-popup-content-wrapper .leaflet-popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem;
+  }
+
+  .leaflet-popup-tip {
+    // background: transparent;
+    // border: none;
+    // box-shadow: none;
+  }
+}
+
+.leaflet-control-attribution {
+  display: flex;
+}
+
+.leaflet-control-layers-list {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: app-variables.$breakpoint-high-resolution-to-full-hd) {
+  .main {
+    &__content {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: app-variables.$breakpoint-medium-to-high-resolution) {
+  .main {
+    &__content {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: app-variables.$breakpoint-desktop-to-medium-resolution) {
+  .btn {
+    font-size: 1rem;
+  }
+
+  .main {
+    &__content {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: app-variables.$breakpoint-tablet-to-small-desktop) {
+  .main {
+    &__content {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.reservoir-icon {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

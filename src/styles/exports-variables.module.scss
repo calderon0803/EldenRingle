@@ -1,0 +1,9 @@
+/** Export scss variables to js vars **/
+:export {
+  primaryColor: app-variables.$primary-color;
+  primaryColorDark: app-variables.$color-dark;
+  primaryColorLight: app-variables.$color-light;
+  secondaryColor: app-variables.$secondary-color;
+  appFontColor: app-variables.$app-font-color;
+  appFontSecondaryColor: app-variables.$app-font-secondary-color;
+}

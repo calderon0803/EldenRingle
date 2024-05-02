@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "One Piece",
+    "gender": "Shonen",
+    "author": "Eiichiro Oda",
+    "image": "onepiece.jpg",
+    "year": "1997"
+  },
+  {
+    "id": 2,
+    "name": "Naruto",
+    "gender": "Shonen",
+    "author": "Masashi Kishimoto",
+    "image": "naruto.jpg",
+    "year": "1999"
+  },
+  {
+    "id": 3,
+    "name": "Dragon Ball",
+    "gender": "Shonen",
+    "author": "Akira Toriyama",
+    "image": "dragonball.jpg",
+    "year": "1984"
+  }
+]
