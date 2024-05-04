@@ -17,7 +17,6 @@ watch(
   () => textInput.value,
   () => {
     emit("update:modelValue", textInput.value);
-    console.log(props.gameOptions);
   }
 );
 </script>

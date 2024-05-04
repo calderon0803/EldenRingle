@@ -34,6 +34,7 @@ onMounted(async () => {
   height: 100vh;
   overflow-x: hidden;
   background-image: url("@/assets/otakudle.jpg");
+  background-size: cover;
 }
 
 .main {

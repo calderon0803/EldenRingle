@@ -11,16 +11,13 @@ const props = defineProps({
   <div class="card">
     <div class="media">
       <div class="media-left">
-        <figure class="image is-48x48">
-          <img
-            src="https://bulma.io/assets/images/placeholders/96x96.png"
-            alt="Placeholder image"
-          />
+        <figure class="image">
+          <img class="pic" :src="props.item.main_pic_medium" />
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4">{{ props.item.name }}</p>
-        <p class="subtitle is-6">{{ props.item.author }}</p>
+        <p class="title is-4">{{ props.item.title }}</p>
+        <p class="subtitle is-6">{{ props.item.init_date.substr(0, 4) }}</p>
       </div>
     </div>
   </div>
@@ -29,5 +26,10 @@ const props = defineProps({
 .card {
   margin: 0.5rem;
   cursor: pointer;
+}
+
+.pic {
+  max-width: 30px;
+  max-height: 60px;
 }
 </style>

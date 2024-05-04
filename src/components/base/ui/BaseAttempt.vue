@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  item: {
+  attempt: {
     type: Object,
     required: false,
     default: () => ({
@@ -18,17 +18,23 @@ const props = defineProps({
 <template>
   <fieldset class="input-flex-group mx-3">
     <div class="notification is-success">
-      {{ item.gender }}
+      <p
+        v-for="(genre, index) in props.attempt.genres"
+        :key="index"
+        class="genre"
+      >
+        {{ props.attempt.genre }}
+      </p>
     </div>
     <div class="notification is-success">
-      {{ item.author }}
+      {{ props.attempt.author }}
     </div>
     <div class="notification is-success">
-      {{ item.year }}
+      {{ props.attempt.init_date.substr(0, 4) }}
     </div>
   </fieldset>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .notification {
   height: auto;
   width: auto;

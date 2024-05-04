@@ -1,6 +1,6 @@
 <script setup>
 import BaseDropdownInput from "./base/ui/BaseDropdownInput.vue";
-import BaseAnimeAttempt from "./base/ui/BaseAnimeAttempt.vue";
+//import BaseAttempt from "./base/ui/BaseAttempt.vue";
 import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
 import { ref, computed } from "vue";
 
@@ -10,7 +10,7 @@ const animeNameInput = ref(null);
 
 const searchAnime = computed(() => {
   const filteredAnimes = guestAnimeStore.animes.filter((anime) =>
-    anime.name.toLowerCase().includes(animeNameInput.value)
+    anime.title.toLowerCase().includes(animeNameInput.value)
   );
   return filteredAnimes;
 });
@@ -38,9 +38,9 @@ const searchAnime = computed(() => {
       :game-options="searchAnime"
       @update:model-value="animeNameInput = $event"
     />
-    <!-- <div class="section__row section__row--left">
-      <BaseAnimeAttempt />
-    </div> -->
+    <div class="section__row section__row--left">
+      <!-- <BaseAttempt :attempts="{}" /> -->
+    </div>
   </div>
 </template>
 
