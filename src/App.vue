@@ -36,9 +36,4 @@ onMounted(async () => {
   background-image: url("@/assets/otakudle.jpg");
   background-size: cover;
 }
-
-.main {
-  width: 100%;
-  height: 100vh;
-}
 </style>

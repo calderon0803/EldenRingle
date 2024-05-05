@@ -11,6 +11,7 @@ export async function useDataLoader() {
     .then(function (data) {
       guestAnimeStore.animes = data;
       showToast("Animes cargados correctamente", "success");
+      getRandomAnime();
       return data;
     })
     .catch(function () {
@@ -20,6 +21,13 @@ export async function useDataLoader() {
   const showError = () => {
     showToast("Error al cargar los animes.", "error");
   };
+}
+
+export function getRandomAnime() {
+  const guestAnimeStore = useGuestAnimeStore();
+  const randomIndex = Math.floor(Math.random() * guestAnimeStore.animes.length);
+  guestAnimeStore.dailyAnime = guestAnimeStore.animes[randomIndex];
+  console.log(guestAnimeStore.dailyAnime);
 }
 
 export async function getAnimes() {

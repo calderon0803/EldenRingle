@@ -1,53 +1,75 @@
 <script setup>
-import BaseDropdownInput from "./base/ui/BaseDropdownInput.vue";
-//import BaseAttempt from "./base/ui/BaseAttempt.vue";
+import AnimeDropdownInput from "./anime/AnimeDropdownInput.vue";
+import AnimeAttempt from "./anime/AnimeAttempt.vue";
 import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
-import { ref, computed } from "vue";
+import { computed } from "vue";
 
 const guestAnimeStore = useGuestAnimeStore();
 
-const animeNameInput = ref(null);
-
 const searchAnime = computed(() => {
-  const filteredAnimes = guestAnimeStore.animes.filter((anime) =>
-    anime.title.toLowerCase().includes(animeNameInput.value)
-  );
+  let filteredAnimes = [];
+  if (guestAnimeStore.animeNameInput) {
+    filteredAnimes = guestAnimeStore.animes.filter((anime) =>
+      anime.title.toLowerCase().includes(guestAnimeStore.animeNameInput)
+    );
+  }
   return filteredAnimes;
 });
+
+const attemptList = computed(() => {
+  return guestAnimeStore.attempts.reverse();
+});
+
+const selectOption = (option) => {
+  guestAnimeStore.attempts.push(option);
+  const index = guestAnimeStore.animes.indexOf(option);
+  guestAnimeStore.animes.splice(index, 1);
+};
 </script>
 
 <template>
-  <div class="game-panel">
-    <div class="card mt-5">
-      <div class="card-content">
-        <div class="content">
-          ¡ADIVINA EL ANIME DE HOY!
-          <br />
-          <br />
-          <br />
-          <p>Escribe cualquier carácter para empezar.</p>
+  <div class="panel">
+    <div class="game-panel">
+      <div class="card mt-5">
+        <div class="card-content">
+          <div class="content">
+            ¡ADIVINA EL ANIME DE HOY!
+            <br />
+            <br />
+            <br />
+            <p>Escribe cualquier carácter para empezar.</p>
+          </div>
         </div>
+        <footer class="card-footer">
+          <span class="card-footer-item">Género</span>
+          <span class="card-footer-item">Año</span>
+          <span class="card-footer-item">Autor</span>
+        </footer>
       </div>
-      <footer class="card-footer">
-        <span class="card-footer-item">Género</span>
-        <span class="card-footer-item">Año</span>
-        <span class="card-footer-item">Autor</span>
-      </footer>
+      <AnimeDropdownInput
+        :game-options="searchAnime"
+        @send-attempt="selectOption($event)"
+      />
     </div>
-    <BaseDropdownInput
-      :game-options="searchAnime"
-      @update:model-value="animeNameInput = $event"
-    />
-    <div class="section__row section__row--left">
-      <!-- <BaseAttempt :attempts="{}" /> -->
+    <div id="attempt-list" class="attempt">
+      <AnimeAttempt
+        v-for="(attempt, idx) in attemptList"
+        :key="idx"
+        :attempt="attempt"
+      />
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.panel {
+  width: 50%;
+  height: 100vh;
+}
+
 .game-panel {
-  width: 30%;
-  height: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -59,5 +81,9 @@ const searchAnime = computed(() => {
   &--right {
     width: 35%;
   }
+}
+
+.attempt {
+  width: 100%;
 }
 </style>
