@@ -2,9 +2,11 @@
 import AnimeDropdownInput from "./anime/AnimeDropdownInput.vue";
 import AnimeAttempt from "./anime/AnimeAttempt.vue";
 import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
-import { computed } from "vue";
+import { computed, ref } from "vue";
 
 const guestAnimeStore = useGuestAnimeStore();
+
+const sucess = ref(false);
 
 const searchAnime = computed(() => {
   let filteredAnimes = [];
@@ -24,6 +26,9 @@ const selectOption = (option) => {
   guestAnimeStore.attempts.push(option);
   const index = guestAnimeStore.animes.indexOf(option);
   guestAnimeStore.animes.splice(index, 1);
+  if (option === guestAnimeStore.dailyAnime) {
+    sucess.value = true;
+  }
 };
 </script>
 
@@ -47,6 +52,7 @@ const selectOption = (option) => {
         </footer>
       </div>
       <AnimeDropdownInput
+        :finish="sucess"
         :game-options="searchAnime"
         @send-attempt="selectOption($event)"
       />
