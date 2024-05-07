@@ -17,15 +17,15 @@ const props = defineProps({
       </div>
       <div class="media-content">
         <p class="title is-4">{{ props.item.title }}</p>
-        <p class="subtitle is-6">{{ props.item.year }}</p>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
 .card {
-  margin: 0.5rem;
   cursor: pointer;
+  border-radius: 0%;
+  width: auto;
 }
 
 .pic {

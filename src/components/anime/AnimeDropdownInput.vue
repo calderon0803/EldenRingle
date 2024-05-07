@@ -66,10 +66,8 @@ const selectOption = (option) => {
 }
 
 .options {
-  width: 25%;
   margin: 0 auto;
-  margin-left: 5px;
-  position: fixed;
+  margin-left: 0.5rem;
   overflow-y: scroll;
   height: 500px;
 }
@@ -81,13 +79,13 @@ const selectOption = (option) => {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 0.5rem;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 10px;
+  border-radius: 5%;
 }
 
 /* Handle */

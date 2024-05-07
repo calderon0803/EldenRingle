@@ -33,7 +33,7 @@ onMounted(async () => {
   grid-row-gap: 0;
   height: 100vh;
   overflow-x: hidden;
-  background-image: url("@/assets/otakudle.jpg");
+  background-image: url("@/assets/app-bg.jpg");
   background-size: cover;
 }
 </style>

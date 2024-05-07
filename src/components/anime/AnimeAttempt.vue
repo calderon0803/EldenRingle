@@ -13,7 +13,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <fieldset class="input-flex-group attemps-list">
+  <fieldset class="input-flex-group attempt">
     <div class="attempt-info-pic">
       <img class="pic" :src="props.attempt.main_pic" />
     </div>
@@ -122,7 +122,7 @@ span {
   height: 90px;
   width: 60px;
   padding: 0;
-  margin: 5px;
+  margin: 3px;
   border: 2px solid black;
   border-radius: 5%;
   color: white;
@@ -133,7 +133,7 @@ span {
   height: 90px;
   width: 90px;
   padding: 0;
-  margin: 5px;
+  margin: 3px;
   border: 2px solid black;
   border-radius: 5%;
   color: white;
@@ -155,7 +155,8 @@ span {
   }
 }
 
-.attempst-list {
-  width: 50%;
+.attempt {
+  width: 100%;
+  justify-content: center;
 }
 </style>

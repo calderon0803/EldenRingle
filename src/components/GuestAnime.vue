@@ -11,8 +11,9 @@ const sucess = ref(false);
 const searchAnime = computed(() => {
   let filteredAnimes = [];
   if (guestAnimeStore.animeNameInput) {
+    const lowerCaseInput = guestAnimeStore.animeNameInput.toLowerCase();
     filteredAnimes = guestAnimeStore.animes.filter((anime) =>
-      anime.title.toLowerCase().includes(guestAnimeStore.animeNameInput)
+      anime.title.toLowerCase().includes(lowerCaseInput)
     );
   }
   return filteredAnimes;
@@ -57,10 +58,11 @@ const selectOption = (option) => {
         @send-attempt="selectOption($event)"
       />
     </div>
-    <div id="attempt-list" class="attempt">
+    <div id="attempt-list">
       <AnimeAttempt
         v-for="(attempt, idx) in attemptList"
         :key="idx"
+        class="attempt"
         :attempt="attempt"
       />
     </div>
@@ -69,13 +71,14 @@ const selectOption = (option) => {
 
 <style lang="scss" scoped>
 .panel {
-  width: 50%;
+  width: 100%;
   height: 100vh;
 }
 
 .game-panel {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
+  z-index: 1000;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -89,7 +92,8 @@ const selectOption = (option) => {
   }
 }
 
-.attempt {
+#attempt-list {
   width: 100%;
+  justify-content: center;
 }
 </style>
