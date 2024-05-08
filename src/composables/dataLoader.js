@@ -43,7 +43,7 @@ export async function getAnimes() {
   };
   const payload = {
     startRow: 0,
-    endRow: 8046,
+    endRow: 500,
     rowGroupCols: [],
     valueCols: [],
     pivotCols: [],
@@ -51,6 +51,17 @@ export async function getAnimes() {
     groupKeys: [],
     filterModel: {
       _cnf_: [
+        [
+          {
+            colId: "O",
+            isChecked: false,
+            isCaseSensitive: false,
+            filterType: "number",
+            filter: "1",
+            type: "inRange",
+            filterTo: "500",
+          },
+        ],
         [
           {
             colId: "D",
@@ -63,7 +74,13 @@ export async function getAnimes() {
         ],
       ],
     },
-    sortModel: [],
+    sortModel: [
+      {
+        colId: "O",
+        sort: "asc",
+      },
+    ],
+    columnHighlights: {},
   };
   const res = await axios.post(url, payload, { headers: _basicHeaders });
   return res;
