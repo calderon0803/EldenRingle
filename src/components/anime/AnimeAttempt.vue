@@ -101,13 +101,14 @@ p {
 }
 
 span {
-  min-height: 90px;
+  min-height: 60px;
   display: inline-flex;
   align-items: center;
 }
 
 .pic {
   width: 100%;
+  height: 100%;
 }
 
 .correct {
@@ -119,19 +120,20 @@ span {
 }
 
 .attempt-info-pic {
-  height: 90px;
-  width: 60px;
+  height: 60px;
+  width: 40px;
   padding: 0;
   margin: 3px;
   border: 2px solid black;
   border-radius: 5%;
   color: white;
   text-align: center;
+  animation-delay: 3s;
 }
 
 .attempt-info {
-  height: 90px;
-  width: 90px;
+  height: 60px;
+  width: 60px;
   padding: 0;
   margin: 3px;
   border: 2px solid black;

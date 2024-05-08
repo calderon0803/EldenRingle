@@ -2,6 +2,7 @@
 import AnimeDropdownInput from "./anime/AnimeDropdownInput.vue";
 import AnimeAttempt from "./anime/AnimeAttempt.vue";
 import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
+import AnimeClue from "./anime/AnimeClue.vue";
 import { computed, ref, watch } from "vue";
 
 const guestAnimeStore = useGuestAnimeStore();
@@ -54,10 +55,20 @@ watch(
             <p>Escribe cualquier carácter para empezar.</p>
           </div>
         </div>
-        <footer class="card-footer">
-          <span class="card-footer-item">Género</span>
-          <span class="card-footer-item">Año</span>
-          <span class="card-footer-item">Autor</span>
+        <footer v-if="guestAnimeStore.dailyAnime" class="card-footer">
+          <span class="card-footer-item"
+            ><AnimeClue
+              :type="'Género'"
+              :value="guestAnimeStore.dailyAnime.genres[0]"
+          /></span>
+          <span class="card-footer-item"
+            ><AnimeClue
+              :type="'Estado'"
+              :value="guestAnimeStore.dailyAnime.state"
+          /></span>
+          <span class="card-footer-item"
+            ><AnimeClue :type="'Año'" :value="guestAnimeStore.dailyAnime.year"
+          /></span>
         </footer>
       </div>
       <AnimeDropdownInput
