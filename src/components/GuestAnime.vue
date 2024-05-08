@@ -2,11 +2,12 @@
 import AnimeDropdownInput from "./anime/AnimeDropdownInput.vue";
 import AnimeAttempt from "./anime/AnimeAttempt.vue";
 import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
 
 const guestAnimeStore = useGuestAnimeStore();
 
-const sucess = ref(false);
+const success = ref(false);
+const listReverse = ref([]);
 
 const searchAnime = computed(() => {
   let filteredAnimes = [];
@@ -19,18 +20,25 @@ const searchAnime = computed(() => {
   return filteredAnimes;
 });
 
-const attemptList = computed(() => {
-  return guestAnimeStore.attempts.reverse();
-});
-
 const selectOption = (option) => {
   guestAnimeStore.attempts.push(option);
   const index = guestAnimeStore.animes.indexOf(option);
   guestAnimeStore.animes.splice(index, 1);
   if (option === guestAnimeStore.dailyAnime) {
-    sucess.value = true;
+    success.value = true;
   }
 };
+
+watch(
+  () => guestAnimeStore.attempts,
+  (newVal) => {
+    listReverse.value = [];
+    for (let i = newVal.length - 1; i >= 0; i--) {
+      listReverse.value.push(newVal[i]);
+    }
+  },
+  { deep: true }
+);
 </script>
 
 <template>
@@ -53,14 +61,14 @@ const selectOption = (option) => {
         </footer>
       </div>
       <AnimeDropdownInput
-        :finish="sucess"
+        :finish="success"
         :game-options="searchAnime"
         @send-attempt="selectOption($event)"
       />
     </div>
     <div id="attempt-list">
       <AnimeAttempt
-        v-for="(attempt, idx) in attemptList"
+        v-for="(attempt, idx) in listReverse"
         :key="idx"
         class="attempt"
         :attempt="attempt"

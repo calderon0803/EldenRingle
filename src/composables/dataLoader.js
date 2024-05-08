@@ -5,14 +5,36 @@ import axios from "axios";
 
 export async function useDataLoader() {
   const guestAnimeStore = useGuestAnimeStore();
-  fetch("/data/animes.json")
+  fetch("/data/series.json")
     .then(function (res) {
       return res.json();
     })
-    .then(function (data) {
+    .then(async function (data) {
       guestAnimeStore.animes = data;
       showToast("Animes cargados correctamente", "success");
       getRandomAnime();
+      // const lista = [];
+      // const animes = await getAnimes();
+      // animes.data.rows.forEach((anime) => {
+      //   lista.push({
+      //     title: anime.C,
+      //     title_jap: anime.AE,
+      //     type: anime.D,
+      //     state: anime.G,
+      //     episodes: anime.H,
+      //     init_date: anime.I,
+      //     end_date: anime.J,
+      //     source: anime.K,
+      //     year: anime.R,
+      //     season: anime.S,
+      //     main_pic: anime.AB,
+      //     genres: anime.V,
+      //     studios: anime.W,
+      //     synopsis: anime.X,
+      //   });
+      // });
+      // console.log(lista);
+
       return data;
     })
     .catch(function () {

@@ -1,6 +1,4 @@
 <script setup>
-import BaseDropdownInputOption from "./AnimeDropdownInputOption.vue";
-import BaseInput from "@/components/base/ui/BaseInput.vue";
 import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
 
 const guestAnimeStore = useGuestAnimeStore();
@@ -24,52 +22,62 @@ const selectOption = (option) => {
 </script>
 
 <template>
-  <fieldset class="input-flex-group mx-3">
-    <BaseInput
-      v-if="!props.finish"
-      :model-value="guestAnimeStore.animeNameInput"
-      placeholder="Nombre del anime"
-      @update:model-value="guestAnimeStore.animeNameInput = $event"
-    />
-    <div v-else class="notification is-success sucess-msg">
-      ¡Felicidades! Has adivinado el anime de hoy! <br /><br />
-      <span>Intentos: {{ guestAnimeStore.attempts.length }}</span>
-    </div>
-  </fieldset>
+  <input
+    v-if="!props.finish"
+    v-model="guestAnimeStore.animeNameInput"
+    class="input name-input"
+    type="text"
+    placeholder="Nombre del anime"
+  />
+  <div v-else class="notification is-success sucess-msg mt-3">
+    ¡Felicidades! Has adivinado el anime de hoy! <br /><br />
+    <span>Intentos: {{ guestAnimeStore.attempts.length }}</span>
+  </div>
   <div v-if="guestAnimeStore.animeNameInput" class="options">
-    <BaseDropdownInputOption
+    <div
       v-for="option in props.gameOptions"
       :key="option.id"
+      class="option-card"
       :item="option"
       @click="selectOption(option)"
-    />
+    >
+      <div class="media">
+        <div class="media-left">
+          <figure class="image my-1 ml-1">
+            <img class="option-pic" :src="option.main_pic" />
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-6 my-2 mr-1">{{ option.title }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
-.button {
+.name-input {
   margin: 0.5rem auto;
-}
-
-.input-flex-group {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-top: 1rem;
-  width: auto;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  &--general-data {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  width: 100%;
 }
 
 .options {
-  margin: 0 auto;
-  margin-left: 0.5rem;
   overflow-y: scroll;
   height: 500px;
+  width: 30%;
+  position: absolute;
+}
+
+.option-card {
+  cursor: pointer;
+  border-radius: 0%;
+  background-color: white;
+  width: auto;
+  border: 1px solid black;
+}
+
+.option-pic {
+  max-width: 30px;
+  max-height: 60px;
 }
 
 .sucess-msg {
