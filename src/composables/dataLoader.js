@@ -1,5 +1,6 @@
 import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
 import { showToast } from "@/utils/showToast.js";
+import { getDailyNumber } from "@/utils/dailyNumber";
 import axios from "axios";
 
 export async function useDataLoader() {
@@ -25,8 +26,12 @@ export async function useDataLoader() {
 
 export function getRandomAnime() {
   const guestAnimeStore = useGuestAnimeStore();
-  const randomIndex = Math.floor(Math.random() * guestAnimeStore.animes.length);
-  guestAnimeStore.dailyAnime = guestAnimeStore.animes[randomIndex];
+  // const randomIndex = Math.floor(Math.random() * guestAnimeStore.animes.length);
+  // guestAnimeStore.dailyAnime = guestAnimeStore.animes[randomIndex];
+  guestAnimeStore.dailyAnime =
+    guestAnimeStore.animes[
+      getDailyNumber().toFixed(0) % guestAnimeStore.animes.length
+    ];
   console.log(guestAnimeStore.dailyAnime);
 }
 

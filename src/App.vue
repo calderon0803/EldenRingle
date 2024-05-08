@@ -3,8 +3,10 @@ import GuestAnime from "./components/GuestAnime.vue";
 import { onMounted } from "vue";
 import { useDataLoader } from "@/composables/dataLoader.js";
 import TheToast from "./components/layout/TheToast.vue";
+import { getDailyNumber } from "@/utils/dailyNumber.js";
 onMounted(async () => {
   await useDataLoader();
+  getDailyNumber();
 });
 </script>
 
