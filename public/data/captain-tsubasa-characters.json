@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Adieu",
+    "role": "Delantero",
+    "number": 14,
+    "country": "Francia",
+    "teams": ["Arsenal", "Francia"],
+    "image": "@/assets/characters/Adieu.jpg"
+  },
+  {
+    "name": "Aguin",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Argentina",
+    "teams": ["Argentina"],
+    "image": "@/assets/characters/Aguin.jpg"
+  },
+  {
+    "name": "Aimor",
+    "role": "Centrocampista",
+    "number": 21,
+    "country": "Argentina",
+    "teams": ["Valencia", "Argentina"]
+  },
+  {
+    "name": "Tomeya Akai",
+    "role": "Defensa",
+    "number": 26,
+    "country": "Japon",
+    "teams": ["UC Sampdoria", "Japon"]
+  },
+  {
+    "name": "Maki Akamine",
+    "role": "Ninguno",
+    "number": "Ninguno",
+    "country": "Japon",
+    "teams": []
+  },
+  {
+    "name": "Alaberdo",
+    "role": "Defensa",
+    "number": 7,
+    "country": "España",
+    "teams": ["Cataluña", "España"]
+  },
+  {
+    "name": "Alan",
+    "role": "Delantero",
+    "number": "Desconocido",
+    "country": "Inglaterra",
+    "teams": ["Leeds United FC", "Inglaterra"]
+  },
+  {
+    "name": "Alberto",
+    "role": "Defensa",
+    "number": 2,
+    "country": "Brasil",
+    "teams": ["Brasil"]
+  },
+  {
+    "name": "Markos Almieja",
+    "role": "Defensa",
+    "number": "Desconocido",
+    "country": "Brasil",
+    "teams": ["Cataluña", "Brasil"]
+  },
+  {
+    "name": "Alvez",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Mexico",
+    "teams": ["Mexico"]
+  },
+  {
+    "name": "Amoro",
+    "role": "Portero",
+    "number": 1,
+    "country": "Francia",
+    "teams": ["Francia"]
+  },
+  {
+    "name": "Yayoi Aoba",
+    "role": "Ninguno",
+    "number": "Ninguno",
+    "country": "Japon",
+    "teams": []
+  },
+  {
+    "name": "Shingo Aoi",
+    "role": "Centrocampista",
+    "number": 20,
+    "country": "Japon",
+    "teams": [
+      "Japon",
+      "FC Albese",
+      "Inter Primavera",
+      "Inter Juniores",
+      "Nakahara"
+    ]
+  },
+  {
+    "name": "Babayan",
+    "role": "Defensa",
+    "number": 4,
+    "country": "Nigeria",
+    "teams": ["FC Groningen", "Nigeria"]
+  },
+  {
+    "name": "Marco Banchi",
+    "role": "Centrocampista",
+    "number": 24,
+    "country": "Italia",
+    "teams": ["Juventus FC", "Italia"]
+  },
+  {
+    "name": "Barsole Bara",
+    "role": "Propietario",
+    "number": "Ninguno",
+    "country": "Brasil",
+    "teams": ["Bara FC"]
+  },
+  {
+    "name": "Diego Barbas",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "Argentina",
+    "teams": ["Argentina"]
+  },
+  {
+    "name": "Baredes",
+    "role": "Portero",
+    "number": "Desconocido",
+    "country": "Francia",
+    "teams": ["Manchester", "Francia"]
+  },
+  {
+    "name": "Baristuta",
+    "role": "Delantero",
+    "number": "Desconocido",
+    "country": "Argentina",
+    "teams": ["Argentina", "AS Roma"]
+  },
+  {
+    "name": "Nicola Bassi",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "Italia",
+    "teams": ["Inter Primavera", "Inter Juniores"]
+  },
+  {
+    "name": "Viltor Baya",
+    "role": "Portero",
+    "number": 1,
+    "country": "Portugal",
+    "teams": ["FC Porto", "Portugal"]
+  },
+  {
+    "name": "Bergkemp",
+    "role": "Delantero",
+    "number": "Desconocido",
+    "country": "Paises Bajos",
+    "teams": ["Arsenal FC", "Paises Bajos"]
+  },
+  {
+    "name": "Blueno",
+    "role": "Defensa",
+    "number": 4,
+    "country": "España",
+    "teams": ["Real Madrid CF", "España"]
+  },
+  {
+    "name": "Bobang",
+    "role": "Desconocido",
+    "number": 22,
+    "country": "Nigeria",
+    "teams": ["FC Albese", "Nigeria"]
+  },
+  {
+    "name": "Bollack",
+    "role": "Centrocampista",
+    "number": 13,
+    "country": "Alemania",
+    "teams": ["Alemania"]
+  },
+  {
+    "name": "Bossi",
+    "role": "Delantero",
+    "number": 11,
+    "country": "Francia",
+    "teams": ["Francia"]
+  },
+  {
+    "name": "Branca",
+    "role": "Centrocampista",
+    "number": 6,
+    "country": "Brasil",
+    "teams": ["Brasil"]
+  },
+  {
+    "name": "Brescias",
+    "role": "Centrocampista",
+    "number": 4,
+    "country": "Australia",
+    "teams": ["Parma", "Australia"]
+  },
+  {
+    "name": "Brolin",
+    "role": "Defensa",
+    "number": 4,
+    "country": "Suecia",
+    "teams": ["Suecia"]
+  },
+  {
+    "name": "Buhon",
+    "role": "Portero",
+    "number": 77,
+    "country": "Italia",
+    "teams": ["Parma", "Italia"]
+  },
+  {
+    "name": "Singprasert Bunnag",
+    "role": "Defensa",
+    "number": 4,
+    "country": "Tailandia",
+    "teams": ["Atletico de Madrid", "Tailandia"]
+  }
+]

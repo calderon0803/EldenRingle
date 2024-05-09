@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted } from "vue";
-
 const props = defineProps({
   type: {
     type: String,
@@ -14,17 +12,17 @@ const props = defineProps({
   },
 });
 
-onMounted(() => {
+const showClue = () => {
   const clue = document.querySelector(".clue");
   clue.addEventListener("click", function () {
     clue.classList.toggle("is-flipped");
   });
-});
+};
 </script>
 
 <template>
   <div class="scene">
-    <div class="clue">
+    <div class="clue" @click="showClue()">
       <div class="clue-face clue-face-front">
         <span>
           <p>{{ props.type }}</p></span

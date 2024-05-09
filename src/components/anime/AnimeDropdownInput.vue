@@ -1,7 +1,7 @@
 <script setup>
-import { useGuestAnimeStore } from "@/store/guestAnimeStore.js";
+import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
 
-const guestAnimeStore = useGuestAnimeStore();
+const guestCharacterStore = useGuestCharacterStore();
 
 const props = defineProps({
   finish: {
@@ -17,23 +17,23 @@ const emit = defineEmits(["update:modelValue", "sendAttempt"]);
 
 const selectOption = (option) => {
   emit("sendAttempt", option);
-  guestAnimeStore.animeNameInput = null;
+  guestCharacterStore.characterNameInput = null;
 };
 </script>
 
 <template>
   <input
     v-if="!props.finish"
-    v-model="guestAnimeStore.animeNameInput"
+    v-model="guestCharacterStore.characterNameInput"
     class="input name-input"
     type="text"
     placeholder="Nombre del anime"
   />
   <div v-else class="notification is-success sucess-msg mt-3">
     ¡Felicidades! Has adivinado el anime de hoy! <br /><br />
-    <span>Intentos: {{ guestAnimeStore.attempts.length }}</span>
+    <span>Intentos: {{ guestCharacterStore.attempts.length }}</span>
   </div>
-  <div v-if="guestAnimeStore.animeNameInput" class="options">
+  <div v-if="guestCharacterStore.characterNameInput" class="options">
     <div
       v-for="option in props.gameOptions"
       :key="option.id"
@@ -44,11 +44,11 @@ const selectOption = (option) => {
       <div class="media">
         <div class="media-left">
           <figure class="image my-1 ml-1">
-            <img class="option-pic" :src="option.main_pic" />
+            <img class="option-pic" :src="option.image" />
           </figure>
         </div>
         <div class="media-content">
-          <p class="title is-6 my-2 mr-1">{{ option.title }}</p>
+          <p class="title is-6 my-2 mr-1">{{ option.name }}</p>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@ const selectOption = (option) => {
 }
 
 .option-pic {
-  max-width: 30px;
+  max-width: 60px;
   max-height: 60px;
 }
 
