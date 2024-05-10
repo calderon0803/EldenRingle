@@ -1,5 +1,6 @@
 <script setup>
 import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
+import { ref, watch } from "vue";
 
 const guestCharacterStore = useGuestCharacterStore();
 
@@ -13,12 +14,31 @@ const props = defineProps({
     required: true,
   },
 });
-const emit = defineEmits(["update:modelValue", "sendAttempt"]);
+const emit = defineEmits(["sendAttempt"]);
+const options = ref([]);
 
 const selectOption = (option) => {
   emit("sendAttempt", option);
   guestCharacterStore.characterNameInput = null;
 };
+
+const addImages = () => {
+  options.value.forEach((option) => {
+    option["imageUrl"] = new URL(
+      `/src/assets/characters/${option.image}`,
+      import.meta.url
+    ).href;
+  });
+  console.log(options.value);
+};
+
+watch(
+  () => props.gameOptions,
+  (newValue) => {
+    options.value = newValue;
+    addImages();
+  }
+);
 </script>
 
 <template>
@@ -44,7 +64,7 @@ const selectOption = (option) => {
       <div class="media">
         <div class="media-left">
           <figure class="image my-1 ml-1">
-            <img class="option-pic" :src="option.image" />
+            <img class="option-pic" :src="option.imageUrl" />
           </figure>
         </div>
         <div class="media-content">

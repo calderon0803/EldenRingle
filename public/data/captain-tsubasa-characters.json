@@ -5,7 +5,8 @@
     "number": 14,
     "country": "Francia",
     "teams": ["Arsenal", "Francia"],
-    "image": "@/assets/characters/Adieu.jpg"
+    "image": "Adieu.jpg",
+    "debut": "Rising Sun"
   },
   {
     "name": "Aguin",
@@ -13,21 +14,25 @@
     "number": 9,
     "country": "Argentina",
     "teams": ["Argentina"],
-    "image": "@/assets/characters/Aguin.jpg"
+    "image": "Aguin.jpg",
+    "debut": "Rising Sun"
   },
   {
     "name": "Aimor",
     "role": "Centrocampista",
     "number": 21,
     "country": "Argentina",
-    "teams": ["Valencia", "Argentina"]
+    "teams": ["Valencia", "Argentina"],
+    "image": "Aimor.jpg",
+    "debut": "Rising Sun"
   },
   {
     "name": "Tomeya Akai",
     "role": "Defensa",
     "number": 26,
     "country": "Japon",
-    "teams": ["UC Sampdoria", "Japon"]
+    "teams": ["UC Sampdoria", "Japon"],
+    "image": "Tomeya Akai.jpg"
   },
   {
     "name": "Maki Akamine",

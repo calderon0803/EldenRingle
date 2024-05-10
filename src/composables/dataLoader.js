@@ -34,6 +34,16 @@ export function getRandomCharacter() {
   console.log(guestCharacterStore.dailyCharacter);
 }
 
+export async function getListFiles() {
+  const result = await this.$gdrive.getListFiles({
+    orderBy: "folder,modifiedTime",
+    q: "trashed=false and '<DRIVE_ID>' in parents",
+    fields:
+      "files(id, name, kind, size, mimeType, lastModifyingUser, modifiedTime, iconLink, owners, folderColorRgb, shared, webViewLink, webContentLink), nextPageToken",
+  });
+  console.log(result);
+}
+
 export async function getAnimes() {
   const url =
     "https://api.gigasheet.com/file/1527fb6e_f9e1_4c64_ab10_e92ebd804b08/filter";

@@ -1,5 +1,5 @@
 <script setup>
-import AnimeDropdownInput from "./anime/AnimeDropdownInput.vue";
+import CharacterDropdownInput from "./anime/CharacterDropdownInput.vue";
 import { addAttempt } from "./anime/AnimeAttempt.js";
 import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
 import AnimeClue from "./anime/AnimeClue.vue";
@@ -10,7 +10,7 @@ const guestCharacterStore = useGuestCharacterStore();
 const success = ref(false);
 const listReverse = ref([]);
 
-const searchAnime = computed(() => {
+const search = computed(() => {
   let filteredAnimes = [];
   if (guestCharacterStore.characterNameInput) {
     const lowerCaseInput = guestCharacterStore.characterNameInput.toLowerCase();
@@ -73,9 +73,9 @@ watch(
           /></span>
         </footer>
       </div>
-      <AnimeDropdownInput
+      <CharacterDropdownInput
         :finish="success"
-        :game-options="searchAnime"
+        :game-options="search"
         @send-attempt="addAttempt($event)"
       />
     </div>
