@@ -15,7 +15,19 @@ export const addAttempt = (attempt) => {
   //Image
   const attemptPicImg = document.createElement("img");
   attemptPicImg.classList.add("full-pic");
-  attemptPicImg.src = "@/assets/characters/Aguin.jpg";
+  const characterImage = new URL(
+    `/src/assets/characters/${attempt.name}.jpg`,
+    import.meta.url
+  ).href;
+  if (characterImage.includes("undefined")) {
+    attemptPicImg.src = new URL(
+      "/src/assets/characters/Default.jpg",
+      import.meta.url
+    ).href;
+  } else {
+    attemptPicImg.src = characterImage;
+  }
+
   const attemptPicDiv = document.createElement("div");
   attemptPicDiv.classList.add("attempt-info-pic");
   attemptPicDiv.appendChild(attemptPicImg);
@@ -32,7 +44,38 @@ export const addAttempt = (attempt) => {
       }
       const attemptFieldSpan = document.createElement("span");
       const attemptFieldP = document.createElement("p");
-      attemptFieldP.innerHTML = attempt[field];
+      const attemptRoleSpan = document.createElement("span");
+      if (attempt[field] === "DEL") {
+        attemptRoleSpan.classList.add(
+          "mdi",
+          "mdi-page-layout-header",
+          "mdi-18px"
+        );
+        attemptFieldP.appendChild(attemptRoleSpan);
+      } else if (attempt[field] === "CEN") {
+        attemptRoleSpan.classList.add(
+          "mdi",
+          "mdi-page-layout-body",
+          "mdi-18px"
+        );
+        attemptFieldP.appendChild(attemptRoleSpan);
+      } else if (attempt[field] === "DEF") {
+        attemptRoleSpan.classList.add(
+          "mdi",
+          "mdi-page-layout-footer",
+          "mdi-18px"
+        );
+        attemptFieldP.appendChild(attemptRoleSpan);
+      } else if (attempt[field] === "POR") {
+        attemptRoleSpan.classList.add(
+          "mdi",
+          "mdi-hand-front-left-outline",
+          "mdi-18px"
+        );
+        attemptFieldP.appendChild(attemptRoleSpan);
+      } else {
+        attemptFieldP.innerHTML = attempt[field];
+      }
       attemptFieldSpan.appendChild(attemptFieldP);
       attemptFieldDiv.appendChild(attemptFieldSpan);
       attemptFieldset.appendChild(attemptFieldDiv);

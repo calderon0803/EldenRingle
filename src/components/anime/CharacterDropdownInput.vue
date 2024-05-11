@@ -1,6 +1,6 @@
 <script setup>
 import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
-import { ref, watch } from "vue";
+import { watch, ref } from "vue";
 
 const guestCharacterStore = useGuestCharacterStore();
 
@@ -15,115 +15,176 @@ const props = defineProps({
   },
 });
 const emit = defineEmits(["sendAttempt"]);
-const options = ref([]);
+//const options = ref([]);
+
+const nameInput = ref(null);
 
 const selectOption = (option) => {
   emit("sendAttempt", option);
-  guestCharacterStore.characterNameInput = null;
+  nameInput.value = null;
 };
 
 const addImages = () => {
-  options.value.forEach((option) => {
-    option["imageUrl"] = new URL(
-      `/src/assets/characters/${option.image}`,
+  props.gameOptions.forEach((option) => {
+    const characterImage = new URL(
+      `/src/assets/characters/${option.name}.jpg`,
       import.meta.url
     ).href;
+    if (characterImage.includes("undefined")) {
+      option["imageUrl"] = new URL(
+        "/src/assets/characters/Default.jpg",
+        import.meta.url
+      ).href;
+    } else {
+      option["imageUrl"] = characterImage;
+    }
   });
-  console.log(options.value);
+};
+
+const filterFunction = () => {
+  if (!nameInput.value) return;
+  const filter = nameInput.value.toUpperCase();
+  const inputDropdown = document.getElementById("inputDropdown");
+  const option = inputDropdown.getElementsByClassName("option");
+  for (let i = 0; i < option.length; i++) {
+    const txtValue = option[i].textContent || option[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      option[i].style.display = "";
+    } else {
+      option[i].style.display = "none";
+    }
+  }
 };
 
 watch(
   () => props.gameOptions,
-  (newValue) => {
-    options.value = newValue;
+  () => {
     addImages();
   }
 );
 </script>
 
 <template>
-  <input
-    v-if="!props.finish"
-    v-model="guestCharacterStore.characterNameInput"
-    class="input name-input"
-    type="text"
-    placeholder="Nombre del anime"
-  />
-  <div v-else class="notification is-success sucess-msg mt-3">
-    ¡Felicidades! Has adivinado el anime de hoy! <br /><br />
-    <span>Intentos: {{ guestCharacterStore.attempts.length }}</span>
-  </div>
-  <div v-if="guestCharacterStore.characterNameInput" class="options">
-    <div
-      v-for="option in props.gameOptions"
-      :key="option.id"
-      class="option-card"
-      :item="option"
-      @click="selectOption(option)"
-    >
-      <div class="media">
-        <div class="media-left">
-          <figure class="image my-1 ml-1">
-            <img class="option-pic" :src="option.imageUrl" />
-          </figure>
+  <div class="dropdowninput">
+    <div v-if="!props.finish" class="dropdown">
+      <div id="inputDropdown" class="dropdown-content show">
+        <input
+          v-model="nameInput"
+          class="input name-input"
+          type="text"
+          placeholder="Buscar..."
+          @keyup="filterFunction()"
+        />
+        <div v-if="nameInput" class="options">
+          <a
+            v-for="(option, index) in props.gameOptions"
+            :key="index"
+            class="option"
+            @click="selectOption(option)"
+            ><div class="media">
+              <div class="media-left">
+                <figure class="image my-1 ml-1">
+                  <img class="option-pic" :src="option.imageUrl" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-6 my-2 mr-1">{{ option.name }}</p>
+              </div>
+            </div></a
+          >
         </div>
-        <div class="media-content">
-          <p class="title is-6 my-2 mr-1">{{ option.name }}</p>
-        </div>
+      </div>
+    </div>
+    <div v-else class="sucess-msg my-3">
+      <div class="mb-3">
+        <span>¡Felicidades!<br />Has adivinado el personaje de hoy</span>
+      </div>
+      <div class="mt-3">
+        <span>Intentos: {{ guestCharacterStore.attempts.length }}</span>
       </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .name-input {
-  margin: 0.5rem auto;
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ddd;
   width: 100%;
 }
 
 .options {
-  overflow-y: scroll;
-  height: 500px;
-  width: 30%;
-  position: absolute;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .option-card {
   cursor: pointer;
   border-radius: 0%;
   background-color: white;
-  width: auto;
   border: 1px solid black;
+  width: auto;
+}
+
+.option {
+  background-color: #f5f5f5;
+}
+
+.option:hover {
+  background-color: #959595;
 }
 
 .option-pic {
-  max-width: 60px;
-  max-height: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.win-pic {
+  background-image: url("/src/assets/win.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  margin: auto;
 }
 
 .sucess-msg {
-  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  color: white;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  border-radius: 5px;
+  padding: 1rem;
+  background-image: url("/src/assets/win.jpg");
+  background-size: cover;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 0.5rem;
+.dropdowninput {
+  position: static !important;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 5%;
+#inputDropdown {
+  background-color: transparent;
+  border: none;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.dropdown-content {
+  position: absolute;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  width: 100%;
 }
 </style>

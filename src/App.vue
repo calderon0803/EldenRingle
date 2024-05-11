@@ -3,10 +3,8 @@ import GuestAnime from "./components/GuestAnime.vue";
 import { onMounted } from "vue";
 import { useDataLoader } from "@/composables/dataLoader.js";
 import TheToast from "./components/layout/TheToast.vue";
-import { getDailyNumber } from "@/utils/dailyNumber.js";
 onMounted(async () => {
   await useDataLoader();
-  getDailyNumber();
 });
 </script>
 
@@ -35,7 +33,7 @@ onMounted(async () => {
   grid-row-gap: 0;
   height: 100vh;
   overflow-x: hidden;
-  background-image: url("@/assets/app-bg.jpg");
+  background-image: url("@/assets/background.jpg");
   background-size: cover;
 }
 </style>

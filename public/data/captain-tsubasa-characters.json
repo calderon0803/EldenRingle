@@ -1,34 +1,31 @@
 [
   {
     "name": "Adieu",
-    "role": "Delantero",
+    "role": "DEL",
     "number": 14,
     "country": "Francia",
     "teams": ["Arsenal", "Francia"],
-    "image": "Adieu.jpg",
     "debut": "Rising Sun"
   },
   {
     "name": "Aguin",
-    "role": "Delantero",
+    "role": "DEL",
     "number": 9,
     "country": "Argentina",
     "teams": ["Argentina"],
-    "image": "Aguin.jpg",
     "debut": "Rising Sun"
   },
   {
     "name": "Aimor",
-    "role": "Centrocampista",
+    "role": "CEN",
     "number": 21,
     "country": "Argentina",
     "teams": ["Valencia", "Argentina"],
-    "image": "Aimor.jpg",
     "debut": "Rising Sun"
   },
   {
     "name": "Tomeya Akai",
-    "role": "Defensa",
+    "role": "DEF",
     "number": 26,
     "country": "Japon",
     "teams": ["UC Sampdoria", "Japon"],
@@ -43,42 +40,42 @@
   },
   {
     "name": "Alaberdo",
-    "role": "Defensa",
+    "role": "DEF",
     "number": 7,
     "country": "España",
     "teams": ["Cataluña", "España"]
   },
   {
     "name": "Alan",
-    "role": "Delantero",
+    "role": "DEL",
     "number": "Desconocido",
     "country": "Inglaterra",
     "teams": ["Leeds United FC", "Inglaterra"]
   },
   {
     "name": "Alberto",
-    "role": "Defensa",
+    "role": "DEF",
     "number": 2,
     "country": "Brasil",
     "teams": ["Brasil"]
   },
   {
     "name": "Markos Almieja",
-    "role": "Defensa",
+    "role": "DEF",
     "number": "Desconocido",
     "country": "Brasil",
     "teams": ["Cataluña", "Brasil"]
   },
   {
     "name": "Alvez",
-    "role": "Delantero",
+    "role": "DEL",
     "number": 9,
     "country": "Mexico",
     "teams": ["Mexico"]
   },
   {
     "name": "Amoro",
-    "role": "Portero",
+    "role": "POR",
     "number": 1,
     "country": "Francia",
     "teams": ["Francia"]
@@ -92,7 +89,7 @@
   },
   {
     "name": "Shingo Aoi",
-    "role": "Centrocampista",
+    "role": "CEN",
     "number": 20,
     "country": "Japon",
     "teams": [
@@ -105,14 +102,14 @@
   },
   {
     "name": "Babayan",
-    "role": "Defensa",
+    "role": "DEF",
     "number": 4,
     "country": "Nigeria",
     "teams": ["FC Groningen", "Nigeria"]
   },
   {
     "name": "Marco Banchi",
-    "role": "Centrocampista",
+    "role": "CEN",
     "number": 24,
     "country": "Italia",
     "teams": ["Juventus FC", "Italia"]
@@ -133,14 +130,14 @@
   },
   {
     "name": "Baredes",
-    "role": "Portero",
+    "role": "POR",
     "number": "Desconocido",
     "country": "Francia",
     "teams": ["Manchester", "Francia"]
   },
   {
     "name": "Baristuta",
-    "role": "Delantero",
+    "role": "DEL",
     "number": "Desconocido",
     "country": "Argentina",
     "teams": ["Argentina", "AS Roma"]
@@ -154,21 +151,21 @@
   },
   {
     "name": "Viltor Baya",
-    "role": "Portero",
+    "role": "POR",
     "number": 1,
     "country": "Portugal",
     "teams": ["FC Porto", "Portugal"]
   },
   {
     "name": "Bergkemp",
-    "role": "Delantero",
+    "role": "DEL",
     "number": "Desconocido",
     "country": "Paises Bajos",
     "teams": ["Arsenal FC", "Paises Bajos"]
   },
   {
     "name": "Blueno",
-    "role": "Defensa",
+    "role": "DEF",
     "number": 4,
     "country": "España",
     "teams": ["Real Madrid CF", "España"]
@@ -182,49 +179,49 @@
   },
   {
     "name": "Bollack",
-    "role": "Centrocampista",
+    "role": "CEN",
     "number": 13,
     "country": "Alemania",
     "teams": ["Alemania"]
   },
   {
     "name": "Bossi",
-    "role": "Delantero",
+    "role": "DEL",
     "number": 11,
     "country": "Francia",
     "teams": ["Francia"]
   },
   {
     "name": "Branca",
-    "role": "Centrocampista",
+    "role": "CEN",
     "number": 6,
     "country": "Brasil",
     "teams": ["Brasil"]
   },
   {
     "name": "Brescias",
-    "role": "Centrocampista",
+    "role": "CEN",
     "number": 4,
     "country": "Australia",
     "teams": ["Parma", "Australia"]
   },
   {
     "name": "Brolin",
-    "role": "Defensa",
+    "role": "DEF",
     "number": 4,
     "country": "Suecia",
     "teams": ["Suecia"]
   },
   {
     "name": "Buhon",
-    "role": "Portero",
+    "role": "POR",
     "number": 77,
     "country": "Italia",
     "teams": ["Parma", "Italia"]
   },
   {
     "name": "Singprasert Bunnag",
-    "role": "Defensa",
+    "role": "DEF",
     "number": 4,
     "country": "Tailandia",
     "teams": ["Atletico de Madrid", "Tailandia"]
