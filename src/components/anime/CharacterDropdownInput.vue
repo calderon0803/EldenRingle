@@ -107,13 +107,22 @@ watch(
 </template>
 <style lang="scss" scoped>
 .name-input {
+  background-color: #fff;
+  border: 3px solid #000;
   box-sizing: border-box;
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  width: 100%;
+}
+
+.name-input:hover {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+
+.name-input:focus {
+  background-color: #fff;
+  border: 3px solid #000;
 }
 
 .options {

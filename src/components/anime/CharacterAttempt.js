@@ -45,32 +45,32 @@ export const addAttempt = (attempt) => {
       const attemptFieldSpan = document.createElement("span");
       const attemptFieldP = document.createElement("p");
       const attemptRoleSpan = document.createElement("span");
-      if (attempt[field] === "DEL") {
+      if (attempt[field] === "Delantero") {
         attemptRoleSpan.classList.add(
           "mdi",
           "mdi-page-layout-header",
-          "mdi-18px"
+          "mdi-24px"
         );
         attemptFieldP.appendChild(attemptRoleSpan);
-      } else if (attempt[field] === "CEN") {
+      } else if (attempt[field] === "Centrocampista") {
         attemptRoleSpan.classList.add(
           "mdi",
           "mdi-page-layout-body",
-          "mdi-18px"
+          "mdi-24px"
         );
         attemptFieldP.appendChild(attemptRoleSpan);
-      } else if (attempt[field] === "DEF") {
+      } else if (attempt[field] === "Defensa") {
         attemptRoleSpan.classList.add(
           "mdi",
           "mdi-page-layout-footer",
-          "mdi-18px"
+          "mdi-24px"
         );
         attemptFieldP.appendChild(attemptRoleSpan);
-      } else if (attempt[field] === "POR") {
+      } else if (attempt[field] === "Portero") {
         attemptRoleSpan.classList.add(
           "mdi",
           "mdi-hand-front-left-outline",
-          "mdi-18px"
+          "mdi-24px"
         );
         attemptFieldP.appendChild(attemptRoleSpan);
       } else {

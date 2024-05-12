@@ -11,7 +11,6 @@ export async function useDataLoader() {
     })
     .then(async function (data) {
       guestCharacterStore.characters = data;
-      showToast("Personajes cargados correctamente", "success");
       getRandomCharacter();
 
       return data;
@@ -21,7 +20,7 @@ export async function useDataLoader() {
     });
 
   const showError = () => {
-    showToast("Error al cargar los animes.", "error");
+    showToast("Error al cargar los personajes.", "error");
   };
 }
 

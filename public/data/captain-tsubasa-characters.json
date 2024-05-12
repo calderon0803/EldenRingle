@@ -1,7 +1,8 @@
 [
   {
     "name": "Adieu",
-    "role": "DEL",
+    "gender": "Masculino",
+    "role": "Delantero",
     "number": 14,
     "country": "Francia",
     "teams": ["Arsenal", "Francia"],
@@ -9,7 +10,8 @@
   },
   {
     "name": "Aguin",
-    "role": "DEL",
+    "gender": "Masculino",
+    "role": "Delantero",
     "number": 9,
     "country": "Argentina",
     "teams": ["Argentina"],
@@ -17,79 +19,98 @@
   },
   {
     "name": "Aimor",
-    "role": "CEN",
+    "gender": "Masculino",
+    "role": "Centrocampista",
     "number": 21,
     "country": "Argentina",
     "teams": ["Valencia", "Argentina"],
-    "debut": "Rising Sun"
+    "debut": "Road to 2002"
   },
   {
     "name": "Tomeya Akai",
-    "role": "DEF",
+    "gender": "Masculino",
+    "role": "Defensa",
     "number": 26,
     "country": "Japon",
     "teams": ["UC Sampdoria", "Japon"],
-    "image": "Tomeya Akai.jpg"
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Maki Akamine",
-    "role": "Ninguno",
+    "gender": "Femenino",
+    "role": "Otro",
     "number": "Ninguno",
     "country": "Japon",
-    "teams": []
+    "teams": [],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Alaberdo",
-    "role": "DEF",
+    "gender": "Masculino",
+    "role": "Defensa",
     "number": 7,
     "country": "España",
-    "teams": ["Cataluña", "España"]
+    "teams": ["FC Barcelona", "España"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Alan",
-    "role": "DEL",
-    "number": "Desconocido",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": "?",
     "country": "Inglaterra",
-    "teams": ["Leeds United FC", "Inglaterra"]
+    "teams": ["Leeds United FC", "Inglaterra"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Alberto",
-    "role": "DEF",
+    "gender": "Masculino",
+    "role": "Defensa",
     "number": 2,
     "country": "Brasil",
-    "teams": ["Brasil"]
+    "teams": ["Brasil"],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Markos Almieja",
-    "role": "DEF",
-    "number": "Desconocido",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": "?",
     "country": "Brasil",
-    "teams": ["Cataluña", "Brasil"]
+    "teams": ["FC Barcelona", "Brasil"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Alvez",
-    "role": "DEL",
+    "gender": "Masculino",
+    "role": "Delantero",
     "number": 9,
     "country": "Mexico",
-    "teams": ["Mexico"]
+    "teams": ["Mexico"],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Amoro",
-    "role": "POR",
+    "gender": "Masculino",
+    "role": "Portero",
     "number": 1,
     "country": "Francia",
-    "teams": ["Francia"]
+    "teams": ["Francia"],
+    "debut": "J Boys' Challenge"
   },
   {
     "name": "Yayoi Aoba",
-    "role": "Ninguno",
+    "gender": "Femenino",
+    "role": "Otro",
     "number": "Ninguno",
     "country": "Japon",
-    "teams": []
+    "teams": [],
+    "debut": "Kids' Dream"
   },
   {
     "name": "Shingo Aoi",
-    "role": "CEN",
+    "gender": "Masculino",
+    "role": "Centrocampista",
     "number": 20,
     "country": "Japon",
     "teams": [
@@ -98,132 +119,313 @@
       "Inter Primavera",
       "Inter Juniores",
       "Nakahara"
-    ]
+    ],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Babayan",
-    "role": "DEF",
+    "gender": "Masculino",
+    "role": "Defensa",
     "number": 4,
     "country": "Nigeria",
-    "teams": ["FC Groningen", "Nigeria"]
+    "teams": ["FC Groningen", "Nigeria"],
+    "debut": "Golden-23"
   },
   {
     "name": "Marco Banchi",
-    "role": "CEN",
+    "gender": "Masculino",
+    "role": "Centrocampista",
     "number": 24,
     "country": "Italia",
-    "teams": ["Juventus FC", "Italia"]
+    "teams": ["Juventus FC", "Italia"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Barsole Bara",
+    "gender": "Masculino",
     "role": "Propietario",
     "number": "Ninguno",
     "country": "Brasil",
-    "teams": ["Bara FC"]
+    "teams": ["Bara FC"],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Diego Barbas",
+    "gender": "Masculino",
     "role": "Entrenador",
     "number": "Ninguno",
     "country": "Argentina",
-    "teams": ["Argentina"]
+    "teams": ["Argentina"],
+    "debut": "J Boys' Challenge"
   },
   {
     "name": "Baredes",
-    "role": "POR",
-    "number": "Desconocido",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": "?",
     "country": "Francia",
-    "teams": ["Manchester", "Francia"]
+    "teams": ["Manchester United", "Francia"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Baristuta",
-    "role": "DEL",
-    "number": "Desconocido",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": "?",
     "country": "Argentina",
-    "teams": ["Argentina", "AS Roma"]
+    "teams": ["Argentina", "AS Roma"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Nicola Bassi",
+    "gender": "Masculino",
     "role": "Entrenador",
     "number": "Ninguno",
     "country": "Italia",
-    "teams": ["Inter Primavera", "Inter Juniores"]
+    "teams": ["Inter Primavera", "Inter Juniores"],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Viltor Baya",
-    "role": "POR",
+    "gender": "Masculino",
+    "role": "Portero",
     "number": 1,
     "country": "Portugal",
-    "teams": ["FC Porto", "Portugal"]
+    "teams": ["FC Porto", "Portugal"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Bergkemp",
-    "role": "DEL",
-    "number": "Desconocido",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": "?",
     "country": "Paises Bajos",
-    "teams": ["Arsenal FC", "Paises Bajos"]
+    "teams": ["Arsenal FC", "Paises Bajos"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Blueno",
-    "role": "DEF",
+    "gender": "Masculino",
+    "role": "Defensa",
     "number": 4,
     "country": "España",
-    "teams": ["Real Madrid CF", "España"]
+    "teams": ["Real Madrid CF", "España"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Bobang",
+    "gender": "Masculino",
     "role": "Desconocido",
     "number": 22,
     "country": "Nigeria",
-    "teams": ["FC Albese", "Nigeria"]
+    "teams": ["FC Albese", "Nigeria"],
+    "debut": "Rising Sun"
   },
   {
     "name": "Bollack",
-    "role": "CEN",
+    "gender": "Masculino",
+    "role": "Centrocampista",
     "number": 13,
     "country": "Alemania",
-    "teams": ["Alemania"]
+    "teams": ["Alemania"],
+    "debut": "Golden-23"
   },
   {
     "name": "Bossi",
-    "role": "DEL",
+    "gender": "Masculino",
+    "role": "Delantero",
     "number": 11,
     "country": "Francia",
-    "teams": ["Francia"]
+    "teams": ["Francia"],
+    "debut": "J Boys' Challenge"
   },
   {
     "name": "Branca",
-    "role": "CEN",
+    "gender": "Masculino",
+    "role": "Centrocampista",
     "number": 6,
     "country": "Brasil",
-    "teams": ["Brasil"]
+    "teams": ["Brasil"],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Brescias",
-    "role": "CEN",
+    "gender": "Masculino",
+    "role": "Centrocampista",
     "number": 4,
     "country": "Australia",
-    "teams": ["Parma", "Australia"]
+    "teams": ["Parma", "Australia"],
+    "debut": "Golden-23"
   },
   {
     "name": "Brolin",
-    "role": "DEF",
+    "gender": "Masculino",
+    "role": "Defensa",
     "number": 4,
     "country": "Suecia",
-    "teams": ["Suecia"]
+    "teams": ["Suecia"],
+    "debut": "Battle of World Youth"
   },
   {
     "name": "Buhon",
-    "role": "POR",
+    "gender": "Masculino",
+    "role": "Portero",
     "number": 77,
     "country": "Italia",
-    "teams": ["Parma", "Italia"]
+    "teams": ["Parma", "Italia"],
+    "debut": "Road to 2002"
   },
   {
     "name": "Singprasert Bunnag",
-    "role": "DEF",
+    "gender": "Masculino",
+    "role": "Defensa",
     "number": 4,
     "country": "Tailandia",
-    "teams": ["Atletico de Madrid", "Tailandia"]
+    "teams": ["Atletico de Madrid", "Tailandia"],
+    "debut": "Battle of World Youth"
+  },
+  {
+    "name": "Callusias",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "España",
+    "teams": ["España", "Real Madrid CF"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Victor Camacho",
+    "gender": "Masculino",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "España",
+    "teams": ["España"],
+    "debut": "Rising Sun"
+  },
+  {
+    "name": "Cannavaru",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 17,
+    "country": "Italia",
+    "teams": ["Parma Fc", "Italia"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Cario",
+    "gender": "Masculino",
+    "role": "Otro",
+    "number": "Ninguno",
+    "country": "Brasil",
+    "teams": ["Ninguno"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Carlos",
+    "gender": "Masculino",
+    "role": "Profesor",
+    "number": "Ninguno",
+    "country": "Portugal",
+    "teams": ["Ninguno"],
+    "debut": "2018 anime"
+  },
+  {
+    "name": "Casa Grande",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 4,
+    "country": "Brasil",
+    "teams": ["Brasil"],
+    "debut": "Battle of World Youth"
+  },
+  {
+    "name": "Cha In-Cheon",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Korea del Sur",
+    "teams": ["Borussia Mönchengladbach", "Korea del Sur"],
+    "debut": "Battle of World Youth"
+  },
+  {
+    "name": "Raymond Chandler",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Camerún",
+    "teams": ["Camerún"],
+    "debut": "Battle of World Youth"
+  },
+  {
+    "name": "Chilavart",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": "?",
+    "country": "Paraguay",
+    "teams": ["RC Strasbourg", "Paraguay"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Christiansen",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Dinamarca",
+    "teams": ["Dinamarca"],
+    "debut": "Rising Sun"
+  },
+  {
+    "name": "Coleman",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 5,
+    "country": "Dinamarca",
+    "teams": ["Bayern Munich", "Dinamarca"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Giis Coleman",
+    "gender": "Masculino",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "Australia",
+    "teams": ["Australia"],
+    "debut": "Golden-23"
+  },
+  {
+    "name": "Phillip Cotu",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 8,
+    "country": "Holanda",
+    "teams": ["FC Barcelona"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Cowen",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 10,
+    "country": "Inglaterra",
+    "teams": ["Liverpool", "Inglaterra"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Crepos",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": "?",
+    "country": "Argentina",
+    "teams": ["SS Lazio"],
+    "debut": "Road to 2002"
+  },
+  {
+    "name": "Brian Cruyfford",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 10,
+    "country": "Holanda",
+    "teams": ["Manchester United", "AFC Ajax", "Holanda"],
+    "debut": "Battle of World Youth"
   }
 ]

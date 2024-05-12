@@ -35,5 +35,6 @@ onMounted(async () => {
   overflow-x: hidden;
   background-image: url("@/assets/background.jpg");
   background-size: cover;
+  background-position: center;
 }
 </style>

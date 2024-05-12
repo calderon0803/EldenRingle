@@ -1,1 +1,1 @@
-export const attemptFields = ["role", "number", "country", "debut"];
+export const attemptFields = ["gender", "role", "number", "country", "debut"];
