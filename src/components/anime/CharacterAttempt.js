@@ -15,18 +15,9 @@ export const addAttempt = (attempt) => {
   //Image
   const attemptPicImg = document.createElement("img");
   attemptPicImg.classList.add("full-pic");
-  const characterImage = new URL(
-    `/src/assets/characters/${attempt.name}.jpg`,
-    import.meta.url
-  ).href;
-  if (characterImage.includes("undefined")) {
-    attemptPicImg.src = new URL(
-      "/src/assets/characters/Default.jpg",
-      import.meta.url
-    ).href;
-  } else {
-    attemptPicImg.src = characterImage;
-  }
+  const characterImage = new URL(attempt.image, import.meta.url).href;
+
+  attemptPicImg.src = characterImage;
 
   const attemptPicDiv = document.createElement("div");
   attemptPicDiv.classList.add("attempt-info-pic");
@@ -45,34 +36,44 @@ export const addAttempt = (attempt) => {
       const attemptFieldSpan = document.createElement("span");
       const attemptFieldP = document.createElement("p");
       const attemptRoleSpan = document.createElement("span");
-      if (attempt[field] === "Delantero") {
-        attemptRoleSpan.classList.add(
-          "mdi",
-          "mdi-page-layout-header",
-          "mdi-24px"
-        );
-        attemptFieldP.appendChild(attemptRoleSpan);
-      } else if (attempt[field] === "Centrocampista") {
-        attemptRoleSpan.classList.add(
-          "mdi",
-          "mdi-page-layout-body",
-          "mdi-24px"
-        );
-        attemptFieldP.appendChild(attemptRoleSpan);
-      } else if (attempt[field] === "Defensa") {
-        attemptRoleSpan.classList.add(
-          "mdi",
-          "mdi-page-layout-footer",
-          "mdi-24px"
-        );
-        attemptFieldP.appendChild(attemptRoleSpan);
-      } else if (attempt[field] === "Portero") {
-        attemptRoleSpan.classList.add(
-          "mdi",
-          "mdi-hand-front-left-outline",
-          "mdi-24px"
-        );
-        attemptFieldP.appendChild(attemptRoleSpan);
+      if (field === "role") {
+        if (attempt[field] === "Delantero") {
+          attemptRoleSpan.classList.add(
+            "mdi",
+            "mdi-page-layout-header",
+            "mdi-24px"
+          );
+          attemptFieldP.appendChild(attemptRoleSpan);
+        } else if (attempt[field] === "Centrocampista") {
+          attemptRoleSpan.classList.add(
+            "mdi",
+            "mdi-page-layout-body",
+            "mdi-24px"
+          );
+          attemptFieldP.appendChild(attemptRoleSpan);
+        } else if (attempt[field] === "Defensa") {
+          attemptRoleSpan.classList.add(
+            "mdi",
+            "mdi-page-layout-footer",
+            "mdi-24px"
+          );
+          attemptFieldP.appendChild(attemptRoleSpan);
+        } else if (attempt[field] === "Portero") {
+          attemptRoleSpan.classList.add(
+            "mdi",
+            "mdi-hand-front-left-outline",
+            "mdi-24px"
+          );
+          attemptFieldP.appendChild(attemptRoleSpan);
+        }
+      } else if (field === "number") {
+        if (attempt[field] > guestCharacterStore.dailyCharacter[field]) {
+          attemptFieldP.innerHTML = attempt[field] + " " + "⬇️";
+        } else if (attempt[field] < guestCharacterStore.dailyCharacter[field]) {
+          attemptFieldP.innerHTML = attempt[field] + " " + "⬆️";
+        } else {
+          attemptFieldP.innerHTML = attempt[field];
+        }
       } else {
         attemptFieldP.innerHTML = attempt[field];
       }

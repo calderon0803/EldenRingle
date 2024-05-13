@@ -55,13 +55,6 @@ const filterFunction = () => {
     }
   }
 };
-
-watch(
-  () => props.gameOptions,
-  () => {
-    addImages();
-  }
-);
 </script>
 
 <template>
@@ -84,7 +77,7 @@ watch(
             ><div class="media">
               <div class="media-left">
                 <figure class="image my-1 ml-1">
-                  <img class="option-pic" :src="option.imageUrl" />
+                  <img class="option-pic" :src="option.image" />
                 </figure>
               </div>
               <div class="media-content">

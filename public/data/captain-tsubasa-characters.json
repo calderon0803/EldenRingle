@@ -6,7 +6,8 @@
     "number": 14,
     "country": "Francia",
     "teams": ["Arsenal", "Francia"],
-    "debut": "Rising Sun"
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/9Gc0V2b/Adieu.png"
   },
   {
     "name": "Aguin",
@@ -15,7 +16,8 @@
     "number": 9,
     "country": "Argentina",
     "teams": ["Argentina"],
-    "debut": "Rising Sun"
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/Ycf3vrJ/Aguin.png"
   },
   {
     "name": "Aimor",
@@ -24,7 +26,8 @@
     "number": 21,
     "country": "Argentina",
     "teams": ["Valencia", "Argentina"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/Gpnzwh3/Aimor.png"
   },
   {
     "name": "Tomeya Akai",
@@ -33,7 +36,8 @@
     "number": 26,
     "country": "Japon",
     "teams": ["UC Sampdoria", "Japon"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/7ND718M/Tomeya-Akai.png"
   },
   {
     "name": "Maki Akamine",
@@ -42,7 +46,8 @@
     "number": "Ninguno",
     "country": "Japon",
     "teams": [],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/2YWkGbZ/Maki-Akamine.png"
   },
   {
     "name": "Alaberdo",
@@ -51,7 +56,8 @@
     "number": 7,
     "country": "España",
     "teams": ["FC Barcelona", "España"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/HNNW2Gk/Alaberdo.png"
   },
   {
     "name": "Alan",
@@ -60,7 +66,8 @@
     "number": "?",
     "country": "Inglaterra",
     "teams": ["Leeds United FC", "Inglaterra"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/VQWdDJv/Alan.png"
   },
   {
     "name": "Alberto",
@@ -69,7 +76,8 @@
     "number": 2,
     "country": "Brasil",
     "teams": ["Brasil"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/GQ9Tqy9/Alberto.png"
   },
   {
     "name": "Markos Almieja",
@@ -78,7 +86,8 @@
     "number": "?",
     "country": "Brasil",
     "teams": ["FC Barcelona", "Brasil"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/qDRxyz4/Markos-Almieja.png"
   },
   {
     "name": "Alvez",
@@ -87,7 +96,8 @@
     "number": 9,
     "country": "Mexico",
     "teams": ["Mexico"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/FnLjQ8z/Alvez.png"
   },
   {
     "name": "Amoro",
@@ -96,7 +106,8 @@
     "number": 1,
     "country": "Francia",
     "teams": ["Francia"],
-    "debut": "J Boys' Challenge"
+    "debut": "J Boys' Challenge",
+    "image": "https://i.ibb.co/5LSbcdW/Amoro.png"
   },
   {
     "name": "Yayoi Aoba",
@@ -105,7 +116,8 @@
     "number": "Ninguno",
     "country": "Japon",
     "teams": [],
-    "debut": "Kids' Dream"
+    "debut": "Kids' Dream",
+    "image": "https://i.ibb.co/bHtkXH5/Yayoi-Aoba.png"
   },
   {
     "name": "Shingo Aoi",
@@ -120,7 +132,8 @@
       "Inter Juniores",
       "Nakahara"
     ],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/2kLWRwQ/Shingo-Aoi.png"
   },
   {
     "name": "Babayan",
@@ -129,7 +142,8 @@
     "number": 4,
     "country": "Nigeria",
     "teams": ["FC Groningen", "Nigeria"],
-    "debut": "Golden-23"
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/zxBhGWz/Babayan.png"
   },
   {
     "name": "Marco Banchi",
@@ -138,7 +152,8 @@
     "number": 24,
     "country": "Italia",
     "teams": ["Juventus FC", "Italia"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/56q7VBs/Marco-Banchi.png"
   },
   {
     "name": "Barsole Bara",
@@ -147,7 +162,8 @@
     "number": "Ninguno",
     "country": "Brasil",
     "teams": ["Bara FC"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/WHJD6tx/Barsole-Bara.png"
   },
   {
     "name": "Diego Barbas",
@@ -156,7 +172,8 @@
     "number": "Ninguno",
     "country": "Argentina",
     "teams": ["Argentina"],
-    "debut": "J Boys' Challenge"
+    "debut": "J Boys' Challenge",
+    "image": "https://i.ibb.co/mX3wLP5/Diego-Barbas.png"
   },
   {
     "name": "Baredes",
@@ -165,7 +182,8 @@
     "number": "?",
     "country": "Francia",
     "teams": ["Manchester United", "Francia"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/p3cbGcc/Baredes.png"
   },
   {
     "name": "Baristuta",
@@ -174,7 +192,8 @@
     "number": "?",
     "country": "Argentina",
     "teams": ["Argentina", "AS Roma"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/nrV3qcP/Baristuta.png"
   },
   {
     "name": "Nicola Bassi",
@@ -183,7 +202,8 @@
     "number": "Ninguno",
     "country": "Italia",
     "teams": ["Inter Primavera", "Inter Juniores"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/mz4NXgh/Nicola-Bassi.png"
   },
   {
     "name": "Viltor Baya",
@@ -192,7 +212,8 @@
     "number": 1,
     "country": "Portugal",
     "teams": ["FC Porto", "Portugal"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/dBmHbLV/Viltor-Baya.png"
   },
   {
     "name": "Bergkemp",
@@ -201,7 +222,8 @@
     "number": "?",
     "country": "Paises Bajos",
     "teams": ["Arsenal FC", "Paises Bajos"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/vdjHYrj/Default.jpg"
   },
   {
     "name": "Blueno",
@@ -210,7 +232,8 @@
     "number": 4,
     "country": "España",
     "teams": ["Real Madrid CF", "España"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/Rz1gQ0C/Blueno.png"
   },
   {
     "name": "Bobang",
@@ -219,7 +242,8 @@
     "number": 22,
     "country": "Nigeria",
     "teams": ["FC Albese", "Nigeria"],
-    "debut": "Rising Sun"
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/LhLV9nr/Bobang.png"
   },
   {
     "name": "Bollack",
@@ -228,7 +252,8 @@
     "number": 13,
     "country": "Alemania",
     "teams": ["Alemania"],
-    "debut": "Golden-23"
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/qnHBdH2/Bollack.png"
   },
   {
     "name": "Bossi",
@@ -237,7 +262,8 @@
     "number": 11,
     "country": "Francia",
     "teams": ["Francia"],
-    "debut": "J Boys' Challenge"
+    "debut": "J Boys' Challenge",
+    "image": "https://i.ibb.co/qBpfVrr/Bossi.png"
   },
   {
     "name": "Branca",
@@ -246,7 +272,8 @@
     "number": 6,
     "country": "Brasil",
     "teams": ["Brasil"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/mJj8bxn/Branca.png"
   },
   {
     "name": "Brescias",
@@ -255,7 +282,8 @@
     "number": 4,
     "country": "Australia",
     "teams": ["Parma", "Australia"],
-    "debut": "Golden-23"
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/w7mJXDp/Brescias.png"
   },
   {
     "name": "Brolin",
@@ -264,7 +292,8 @@
     "number": 4,
     "country": "Suecia",
     "teams": ["Suecia"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/hxNsYf3/Brolin.png"
   },
   {
     "name": "Buhon",
@@ -273,7 +302,8 @@
     "number": 77,
     "country": "Italia",
     "teams": ["Parma", "Italia"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/NNrYfrL/Buhon.png"
   },
   {
     "name": "Singprasert Bunnag",
@@ -282,7 +312,8 @@
     "number": 4,
     "country": "Tailandia",
     "teams": ["Atletico de Madrid", "Tailandia"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/FnHfFv9/Singprasert-Bunnag.png"
   },
   {
     "name": "Callusias",
@@ -291,7 +322,8 @@
     "number": 1,
     "country": "España",
     "teams": ["España", "Real Madrid CF"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/Jyz5FtT/Callusias.webp"
   },
   {
     "name": "Victor Camacho",
@@ -300,7 +332,8 @@
     "number": "Ninguno",
     "country": "España",
     "teams": ["España"],
-    "debut": "Rising Sun"
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/wcssRtH/Camacho.webp"
   },
   {
     "name": "Cannavaru",
@@ -309,7 +342,8 @@
     "number": 17,
     "country": "Italia",
     "teams": ["Parma Fc", "Italia"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/pLwCwp5/Cannavaru.webp"
   },
   {
     "name": "Cario",
@@ -318,7 +352,8 @@
     "number": "Ninguno",
     "country": "Brasil",
     "teams": ["Ninguno"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/QjQrgDz/Cario.jpg"
   },
   {
     "name": "Carlos",
@@ -327,7 +362,8 @@
     "number": "Ninguno",
     "country": "Portugal",
     "teams": ["Ninguno"],
-    "debut": "2018 anime"
+    "debut": "2018 anime",
+    "image": "https://i.ibb.co/3S3MpMm/imagen-2024-05-14-001344029.png"
   },
   {
     "name": "Casa Grande",
@@ -336,7 +372,8 @@
     "number": 4,
     "country": "Brasil",
     "teams": ["Brasil"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/tbKp4bC/Casa-Grande.webp"
   },
   {
     "name": "Cha In-Cheon",
@@ -345,7 +382,8 @@
     "number": 9,
     "country": "Korea del Sur",
     "teams": ["Borussia Mönchengladbach", "Korea del Sur"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/X2YdfVW/Cha-In-Cheon.webp"
   },
   {
     "name": "Raymond Chandler",
@@ -354,7 +392,8 @@
     "number": 9,
     "country": "Camerún",
     "teams": ["Camerún"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/g49pQfm/Raymond-Chandler.webp"
   },
   {
     "name": "Chilavart",
@@ -363,7 +402,8 @@
     "number": "?",
     "country": "Paraguay",
     "teams": ["RC Strasbourg", "Paraguay"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/gPvkcDL/Chilavart.webp"
   },
   {
     "name": "Christiansen",
@@ -372,7 +412,8 @@
     "number": 9,
     "country": "Dinamarca",
     "teams": ["Dinamarca"],
-    "debut": "Rising Sun"
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/jVXwVgS/Christiansen.jpg"
   },
   {
     "name": "Coleman",
@@ -381,7 +422,8 @@
     "number": 5,
     "country": "Dinamarca",
     "teams": ["Bayern Munich", "Dinamarca"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/MBRH0WG/Coleman.jpg"
   },
   {
     "name": "Giis Coleman",
@@ -390,7 +432,8 @@
     "number": "Ninguno",
     "country": "Australia",
     "teams": ["Australia"],
-    "debut": "Golden-23"
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/KGNCfkD/Giis-Coleman.webp"
   },
   {
     "name": "Phillip Cotu",
@@ -399,7 +442,8 @@
     "number": 8,
     "country": "Holanda",
     "teams": ["FC Barcelona"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/L1CnWgP/Cotu.jpg"
   },
   {
     "name": "Cowen",
@@ -408,7 +452,8 @@
     "number": 10,
     "country": "Inglaterra",
     "teams": ["Liverpool", "Inglaterra"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/T8N5wn9/Cowen.webp"
   },
   {
     "name": "Crepos",
@@ -417,7 +462,8 @@
     "number": "?",
     "country": "Argentina",
     "teams": ["SS Lazio"],
-    "debut": "Road to 2002"
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/HFFTx5W/Crepos.webp"
   },
   {
     "name": "Brian Cruyfford",
@@ -426,6 +472,137 @@
     "number": 10,
     "country": "Holanda",
     "teams": ["Manchester United", "AFC Ajax", "Holanda"],
-    "debut": "Battle of World Youth"
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/NStwzGb/Brian-Cruyfford.jpg"
+  },
+  {
+    "name": "Daje",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 6,
+    "country": "Australia",
+    "teams": ["Australia"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/r2Qgn1j/Daje.webp"
+  },
+  {
+    "name": "Danil Silva",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 6,
+    "country": "Brasil",
+    "teams": ["Deportivo La Coruña", "Brasil"],
+    "debut": "Overseas Fierce Fight",
+    "image": "https://i.ibb.co/wQjk3FP/Danil-Silva.webp"
+  },
+  {
+    "name": "Edgar Davids",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 26,
+    "country": "Holanda",
+    "teams": ["Juventus FC", "Holanda"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/C5JXYMm/Davi-JUV-DT-1.webp"
+  },
+  {
+    "name": "Vicente de la Pasque",
+    "gender": "Masculino",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "España",
+    "teams": ["Real Madrid CF", "España"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/VtjTK3t/imagen-2024-05-13-235559863.png"
+  },
+  {
+    "name": "Alessandro Delpi",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 10,
+    "country": "Italia",
+    "teams": ["Italia", "Juventus FC"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/PwMtJXb/Delpi.webp"
+  },
+  {
+    "name": "Denis Kramer",
+    "gender": "Masculino",
+    "role": "Ojeador",
+    "number": "Ninguno",
+    "country": "Holanda",
+    "teams": ["AFC Ajax"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/stVHLtD/Kramer.webp"
+  },
+  {
+    "name": "Juan Diaz",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 10,
+    "country": "Argentina",
+    "teams": ["Argentina", "Boca Juniors", "SSC Napoli"],
+    "debut": "J Boys' Challenge",
+    "image": "https://i.ibb.co/kQbtMgb/imagen-2024-05-14-001244803.png"
+  },
+  {
+    "name": "Leon Dick",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 2,
+    "country": "Holanda",
+    "teams": ["Holanda", "AFC Ajax"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/k6Rm22D/Leon-WY.webp"
+  },
+  {
+    "name": "Hans Dolman",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "Holanda",
+    "teams": ["Holanda", "AFC Ajax"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/QXBg1dC/imagen-2024-05-14-000441309.png"
+  },
+  {
+    "name": "Dotor",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 6,
+    "country": "Croacia",
+    "teams": ["Croacia", "Juventus FC"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/jkSxMKB/Dotor.webp"
+  },
+  {
+    "name": "Drener",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "Alemania",
+    "teams": ["Bayern Munich"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/P5fcJ4s/Drener.webp"
+  },
+  {
+    "name": "Duhgo",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 8,
+    "country": "Brasil",
+    "teams": ["Brasil"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/QjhtLsq/Duhgo-DT-1.webp"
+  },
+  {
+    "name": "Mark Duviga",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Australia",
+    "teams": ["Newcastle United FC", "Australia"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/BghxcJV/Duviga.webp"
   }
 ]

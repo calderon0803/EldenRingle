@@ -3,13 +3,14 @@ import CharacterDropdownInput from "./anime/CharacterDropdownInput.vue";
 import { addAttempt } from "./anime/CharacterAttempt.js";
 import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
 import { ref, watch } from "vue";
+import confetti from "canvas-confetti";
 
 const guestCharacterStore = useGuestCharacterStore();
 
 const success = ref(false);
 const listReverse = ref([]);
 const clue = ref(null);
-const attemptsLeftForClue = ref("Quedan 3 intentos para la siguiente pista");
+const attemptsLeftForClue = ref("3 intento/s para la siguiente pista");
 
 const selectOption = (option) => {
   guestCharacterStore.attempts.push(option);
@@ -19,8 +20,36 @@ const selectOption = (option) => {
   setTimeout(() => {
     if (option === guestCharacterStore.dailyCharacter) {
       success.value = true;
+      launchConfetti();
     }
   }, 1000);
+};
+const launchConfetti = () => {
+  const end = Date.now() + 15 * 1000;
+
+  // go Buckeyes!
+  const colors = ["#0000bb", "#ffffff", "#bb0000"];
+
+  (function frame() {
+    confetti({
+      particleCount: 3,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+      colors: colors,
+    });
+    confetti({
+      particleCount: 3,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+      colors: colors,
+    });
+
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  })();
 };
 
 const toggleClue = (clueName) => {
@@ -60,7 +89,7 @@ watch(
     } else {
       if (newVal.length >= 5) {
         attemptsLeftForClue.value =
-          "Quedan " + (7 - newVal.length) + " intentos para la siguiente pista";
+          7 - newVal.length + " intento/s para la siguiente pista";
         const clue2 = document.getElementById("clue2");
         clue2.classList.remove("clue-btn-disabled");
         clue2.classList.add("clue-btn");
@@ -68,18 +97,14 @@ watch(
       } else {
         if (newVal.length >= 3) {
           attemptsLeftForClue.value =
-            "Quedan " +
-            (5 - newVal.length) +
-            " intentos para la siguiente pista";
+            5 - newVal.length + " intento/s para la siguiente pista";
           const clue1 = document.getElementById("clue1");
           clue1.classList.remove("clue-btn-disabled");
           clue1.classList.add("clue-btn");
           clue1.onclick = () => toggleClue("role");
         } else {
           attemptsLeftForClue.value =
-            "Quedan " +
-            (3 - newVal.length) +
-            " intentos para la siguiente pista";
+            3 - newVal.length + " intento/s para la siguiente pista";
         }
       }
     }
@@ -200,6 +225,7 @@ watch(
   height: 70px;
   border-radius: 5px;
   text-align: center;
+  cursor: pointer;
 
   p {
     text-align: center;
@@ -220,6 +246,7 @@ watch(
   height: 70px;
   border-radius: 5px;
   text-align: center;
+  cursor: pointer;
 
   p {
     text-align: center;
@@ -257,7 +284,7 @@ watch(
 }
 
 .clue-text {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-size: medium;
   text-align: center;
   color: white;
@@ -266,7 +293,7 @@ watch(
 }
 
 .attempts-for-clue {
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
   color: white;
   height: 30%;

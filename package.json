@@ -29,7 +29,9 @@
     "@mdi/font": "^7.4.47",
     "axios": "^1.6.8",
     "bulma": "^0.9.4",
+    "canvas-confetti": "^1.9.3",
     "pinia": "^2.1.7",
+    "save": "^2.9.0",
     "vue": "^3.4.15"
   },
   "devDependencies": {
