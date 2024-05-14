@@ -65,6 +65,8 @@ export const addAttempt = (attempt) => {
             "mdi-24px"
           );
           attemptFieldP.appendChild(attemptRoleSpan);
+        } else {
+          attemptFieldP.innerHTML = attempt[field];
         }
       } else if (field === "number") {
         if (attempt[field] > guestCharacterStore.dailyCharacter[field]) {
