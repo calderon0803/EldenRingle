@@ -506,6 +506,32 @@ input {
   }
 }
 
+.superior {
+  height: 77px;
+  width: 77px;
+  background-image: url("/src/assets/superior.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+
+  p {
+    width: 77px;
+  }
+}
+
+.inferior {
+  height: 77px;
+  width: 77px;
+  background-image: url("/src/assets/inferior.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+
+  p {
+    width: 77px;
+  }
+}
+
 .input-flex-group {
   display: flex;
   flex-direction: row;

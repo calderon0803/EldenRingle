@@ -1,5 +1,5 @@
 import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
-import { attemptFields } from "../config/attempt-info-config.js";
+import { attemptFields, arcsOrder } from "../config/attempt-info-config.js";
 
 export const addAttempt = (attempt) => {
   const guestCharacterStore = useGuestCharacterStore();
@@ -70,12 +70,24 @@ export const addAttempt = (attempt) => {
         }
       } else if (field === "number") {
         if (attempt[field] > guestCharacterStore.dailyCharacter[field]) {
-          attemptFieldP.innerHTML = attempt[field] + " " + "⬇️";
+          attemptFieldSpan.classList.add("inferior");
         } else if (attempt[field] < guestCharacterStore.dailyCharacter[field]) {
-          attemptFieldP.innerHTML = attempt[field] + " " + "⬆️";
-        } else {
-          attemptFieldP.innerHTML = attempt[field];
+          attemptFieldSpan.classList.add("superior");
         }
+        attemptFieldP.innerHTML = attempt[field];
+      } else if (field === "debut") {
+        if (
+          arcsOrder.indexOf(attempt[field]) >
+          arcsOrder.indexOf(guestCharacterStore.dailyCharacter[field])
+        ) {
+          attemptFieldSpan.classList.add("inferior");
+        } else if (
+          arcsOrder.indexOf(attempt[field]) <
+          arcsOrder.indexOf(guestCharacterStore.dailyCharacter[field])
+        ) {
+          attemptFieldSpan.classList.add("superior");
+        }
+        attemptFieldP.innerHTML = attempt[field];
       } else {
         attemptFieldP.innerHTML = attempt[field];
       }
