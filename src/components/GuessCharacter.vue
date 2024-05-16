@@ -1,29 +1,50 @@
 <script setup>
 import CharacterDropdownInput from "./anime/CharacterDropdownInput.vue";
 import { addAttempt } from "./anime/CharacterAttempt.js";
-import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
+import { useGuessCharacterStore } from "@/store/guessCharacterStore.js";
 import { ref, watch } from "vue";
 import confetti from "canvas-confetti";
 
-const guestCharacterStore = useGuestCharacterStore();
+const guessCharacterStore = useGuessCharacterStore();
 
 const success = ref(false);
-const listReverse = ref([]);
 const clue = ref(null);
 const attemptsLeftForClue = ref("3 intento/s para la siguiente pista");
 
 const selectOption = (option) => {
-  guestCharacterStore.attempts.push(option);
-  const index = guestCharacterStore.characters.indexOf(option);
-  guestCharacterStore.characters.splice(index, 1);
+  guessCharacterStore.attempts.push(option);
+  const index = guessCharacterStore.characters.indexOf(option);
+  guessCharacterStore.characters.splice(index, 1);
   addAttempt(option);
   setTimeout(() => {
-    if (option === guestCharacterStore.dailyCharacter) {
+    if (option === guessCharacterStore.dailyCharacter) {
       success.value = true;
       launchConfetti();
     }
   }, 1000);
+  updateLocalStorage();
 };
+
+const updateLocalStorage = () => {
+  localStorage.todayAttempts = JSON.stringify(guessCharacterStore.attempts);
+  if (localStorage.todayGuessCharacterStorage) {
+    const todayGuessCharacterStorage = JSON.parse(
+      localStorage.todayGuessCharacterStorage
+    );
+    todayGuessCharacterStorage.character_attempts =
+      guessCharacterStore.attempts;
+    todayGuessCharacterStorage.character_attempts_count =
+      guessCharacterStore.attempts.length;
+    todayGuessCharacterStorage.guessed_character = success.value;
+
+    localStorage.todayGuessCharacterStorage = JSON.stringify(
+      todayGuessCharacterStorage
+    );
+  }
+  console.log(JSON.parse(localStorage.todayAttempts));
+  console.log(JSON.parse(localStorage.todayGuessCharacterStorage));
+};
+
 const launchConfetti = () => {
   const end = Date.now() + 15 * 1000;
 
@@ -53,7 +74,7 @@ const launchConfetti = () => {
 };
 
 const toggleClue = (clueName) => {
-  let clueText = guestCharacterStore.dailyCharacter[clueName];
+  let clueText = guessCharacterStore.dailyCharacter[clueName];
   if (clue.value === clueText) {
     clueText = null;
   } else {
@@ -73,13 +94,8 @@ const toggleClue = (clueName) => {
 };
 
 watch(
-  () => guestCharacterStore.attempts,
+  () => guessCharacterStore.attempts,
   (newVal) => {
-    listReverse.value = [];
-    for (let i = newVal.length - 1; i >= 0; i--) {
-      listReverse.value.push(newVal[i]);
-    }
-
     if (newVal.length >= 7) {
       attemptsLeftForClue.value = "No quedan intentos para pistas adicionales";
       const clue3 = document.getElementById("clue3");
@@ -138,7 +154,7 @@ watch(
         <div class="clue">
           <span>
             <p class="clue-text">
-              <span v-if="guestCharacterStore.dailyCharacter && clue">{{
+              <span v-if="guessCharacterStore.dailyCharacter && clue">{{
                 clue.toUpperCase()
               }}</span>
             </p>
@@ -150,8 +166,7 @@ watch(
       </div>
       <CharacterDropdownInput
         :finish="success"
-        :game-options="guestCharacterStore.characters"
-        style="position: absolute"
+        :game-options="guessCharacterStore.characters"
         @send-attempt="selectOption($event)"
       />
     </div>

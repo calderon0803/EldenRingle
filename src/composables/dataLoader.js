@@ -1,16 +1,15 @@
-import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
+import { useGuessCharacterStore } from "@/store/guessCharacterStore.js";
 import { showToast } from "@/utils/showToast.js";
 import { getDailyNumber } from "@/utils/dailyNumber";
-import axios from "axios";
 
 export async function useDataLoader() {
-  const guestCharacterStore = useGuestCharacterStore();
+  const guessCharacterStore = useGuessCharacterStore();
   fetch("/data/captain-tsubasa-characters.json")
     .then(function (res) {
       return res.json();
     })
     .then(async function (data) {
-      guestCharacterStore.characters = data;
+      guessCharacterStore.characters = data;
       getRandomCharacter();
 
       return data;
@@ -25,92 +24,28 @@ export async function useDataLoader() {
 }
 
 export function getRandomCharacter() {
-  const guestCharacterStore = useGuestCharacterStore();
-  guestCharacterStore.dailyCharacter =
-    guestCharacterStore.characters[
-      getDailyNumber().toFixed(0) % guestCharacterStore.characters.length
+  const guessCharacterStore = useGuessCharacterStore();
+  guessCharacterStore.dailyCharacter =
+    guessCharacterStore.characters[
+      getDailyNumber().toFixed(0) % guessCharacterStore.characters.length
     ];
-  console.log(guestCharacterStore.dailyCharacter);
+  console.log(guessCharacterStore.dailyCharacter);
 }
 
-export async function getListFiles() {
-  const result = await this.$gdrive.getListFiles({
-    orderBy: "folder,modifiedTime",
-    q: "trashed=false and '<DRIVE_ID>' in parents",
-    fields:
-      "files(id, name, kind, size, mimeType, lastModifyingUser, modifiedTime, iconLink, owners, folderColorRgb, shared, webViewLink, webContentLink), nextPageToken",
-  });
-  console.log(result);
+export function crateLocalStorage() {
+  const todayStats = {
+    character_attempts: [],
+    character_attempts_count: 0,
+    guessed_character: false,
+    date: new Date().toLocaleDateString(),
+  };
+  localStorage.todayGuessCharacterStorage = JSON.stringify(todayStats);
 }
 
-export async function getAnimes() {
-  const url =
-    "https://api.gigasheet.com/file/1527fb6e_f9e1_4c64_ab10_e92ebd804b08/filter";
-  const _basicHeaders = {
-    "Content-Type": "application/json",
-  };
-  const payload = {
-    startRow: 0,
-    endRow: 500,
-    rowGroupCols: [],
-    valueCols: [],
-    pivotCols: [],
-    pivotMode: false,
-    groupKeys: [],
-    filterModel: {
-      _cnf_: [
-        [
-          {
-            colId: "O",
-            isChecked: false,
-            isCaseSensitive: false,
-            filterType: "number",
-            filter: "1",
-            type: "inRange",
-            filterTo: "500",
-          },
-        ],
-        [
-          {
-            colId: "D",
-            isChecked: false,
-            isCaseSensitive: false,
-            filterType: "text",
-            filter: ["tv"],
-            type: "equalsAny",
-          },
-        ],
-      ],
-    },
-    sortModel: [
-      {
-        colId: "O",
-        sort: "asc",
-      },
-    ],
-    columnHighlights: {},
-  };
-  const res = await axios.post(url, payload, { headers: _basicHeaders });
-  return res;
+export function getLocalStorageTodayAttempts() {
+  if (localStorage.todayAttempts) {
+    return JSON.parse(localStorage.todayAttempts);
+  } else {
+    return [];
+  }
 }
-// const lista = [];
-// const animes = await getAnimes();
-// animes.data.rows.forEach((anime) => {
-//   lista.push({
-//     title: anime.C,
-//     title_jap: anime.AE,
-//     type: anime.D,
-//     state: anime.G,
-//     episodes: anime.H,
-//     init_date: anime.I,
-//     end_date: anime.J,
-//     source: anime.K,
-//     year: anime.R,
-//     season: anime.S,
-//     main_pic: anime.AB,
-//     genres: anime.V,
-//     studios: anime.W,
-//     synopsis: anime.X,
-//   });
-// });
-// console.log(lista);

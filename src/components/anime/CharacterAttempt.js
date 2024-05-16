@@ -1,8 +1,8 @@
-import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
+import { useGuessCharacterStore } from "@/store/guessCharacterStore.js";
 import { attemptFields, arcsOrder } from "../config/attempt-info-config.js";
 
 export const addAttempt = (attempt) => {
-  const guestCharacterStore = useGuestCharacterStore();
+  const guessCharacterStore = useGuessCharacterStore();
   const attemptFieldset = document.createElement("fieldset");
   document
     .getElementById("attempt-list")
@@ -28,7 +28,7 @@ export const addAttempt = (attempt) => {
     setTimeout(() => {
       const attemptFieldDiv = document.createElement("div");
       attemptFieldDiv.classList.add("attempt-info");
-      if (guestCharacterStore.dailyCharacter[field] == attempt[field]) {
+      if (guessCharacterStore.dailyCharacter[field] == attempt[field]) {
         attemptFieldDiv.classList.add("correct");
       } else {
         attemptFieldDiv.classList.add("incorrect");
@@ -69,21 +69,21 @@ export const addAttempt = (attempt) => {
           attemptFieldP.innerHTML = attempt[field];
         }
       } else if (field === "number") {
-        if (attempt[field] > guestCharacterStore.dailyCharacter[field]) {
+        if (attempt[field] > guessCharacterStore.dailyCharacter[field]) {
           attemptFieldSpan.classList.add("inferior");
-        } else if (attempt[field] < guestCharacterStore.dailyCharacter[field]) {
+        } else if (attempt[field] < guessCharacterStore.dailyCharacter[field]) {
           attemptFieldSpan.classList.add("superior");
         }
         attemptFieldP.innerHTML = attempt[field];
       } else if (field === "debut") {
         if (
           arcsOrder.indexOf(attempt[field]) >
-          arcsOrder.indexOf(guestCharacterStore.dailyCharacter[field])
+          arcsOrder.indexOf(guessCharacterStore.dailyCharacter[field])
         ) {
           attemptFieldSpan.classList.add("inferior");
         } else if (
           arcsOrder.indexOf(attempt[field]) <
-          arcsOrder.indexOf(guestCharacterStore.dailyCharacter[field])
+          arcsOrder.indexOf(guessCharacterStore.dailyCharacter[field])
         ) {
           attemptFieldSpan.classList.add("superior");
         }

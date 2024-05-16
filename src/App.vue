@@ -1,16 +1,31 @@
 <script setup>
-import GuestAnime from "./components/GuestAnime.vue";
+import GuessCharacter from "./components/GuessCharacter.vue";
 import { onMounted } from "vue";
-import { useDataLoader } from "@/composables/dataLoader.js";
+import {
+  useDataLoader,
+  crateLocalStorage,
+  getLocalStorageTodayAttempts,
+} from "@/composables/dataLoader.js";
 import TheToast from "./components/layout/TheToast.vue";
+import { useGuessCharacterStore } from "./store/guessCharacterStore.js";
+import { addAttempt } from "@/components/anime/CharacterAttempt.js";
+
+const guessCharacterStore = useGuessCharacterStore();
 onMounted(async () => {
   await useDataLoader();
+  crateLocalStorage();
+  guessCharacterStore.attempts = getLocalStorageTodayAttempts();
+  guessCharacterStore.attempts.forEach((attempt) => {
+    const index = guessCharacterStore.characters.indexOf(attempt);
+    guessCharacterStore.characters.splice(index, 1);
+    addAttempt(attempt);
+  });
 });
 </script>
 
 <template>
   <div class="grid">
-    <GuestAnime />
+    <GuessCharacter />
   </div>
   <TheToast />
 </template>

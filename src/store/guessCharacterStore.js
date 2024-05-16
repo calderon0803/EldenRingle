@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-export const useGuestCharacterStore = defineStore("guestCharacterStore", {
+export const useGuessCharacterStore = defineStore("guessCharacterStore", {
   state: () => {
     return {
       characters: [],

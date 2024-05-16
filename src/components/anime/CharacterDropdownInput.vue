@@ -1,8 +1,8 @@
 <script setup>
-import { useGuestCharacterStore } from "@/store/guestCharacterStore.js";
-import { watch, ref } from "vue";
+import { useGuessCharacterStore } from "@/store/guessCharacterStore.js";
+import { ref } from "vue";
 
-const guestCharacterStore = useGuestCharacterStore();
+const guessCharacterStore = useGuessCharacterStore();
 
 const props = defineProps({
   finish: {
@@ -24,22 +24,22 @@ const selectOption = (option) => {
   nameInput.value = null;
 };
 
-const addImages = () => {
-  props.gameOptions.forEach((option) => {
-    const characterImage = new URL(
-      `/src/assets/characters/${option.name}.jpg`,
-      import.meta.url
-    ).href;
-    if (characterImage.includes("undefined")) {
-      option["imageUrl"] = new URL(
-        "/src/assets/characters/Default.jpg",
-        import.meta.url
-      ).href;
-    } else {
-      option["imageUrl"] = characterImage;
-    }
-  });
-};
+// const addImages = () => {
+//   props.gameOptions.forEach((option) => {
+//     const characterImage = new URL(
+//       `/src/assets/characters/${option.name}.jpg`,
+//       import.meta.url
+//     ).href;
+//     if (characterImage.includes("undefined")) {
+//       option["imageUrl"] = new URL(
+//         "/src/assets/characters/Default.jpg",
+//         import.meta.url
+//       ).href;
+//     } else {
+//       option["imageUrl"] = characterImage;
+//     }
+//   });
+// };
 
 const filterFunction = () => {
   if (!nameInput.value) return;
@@ -93,7 +93,7 @@ const filterFunction = () => {
         <span>¡Felicidades!<br />Has adivinado el personaje de hoy</span>
       </div>
       <div class="mt-3">
-        <span>Intentos: {{ guestCharacterStore.attempts.length }}</span>
+        <span>Intentos: {{ guessCharacterStore.attempts.length }}</span>
       </div>
     </div>
   </div>
@@ -170,11 +170,6 @@ const filterFunction = () => {
   position: static !important;
 }
 
-#inputDropdown {
-  background-color: transparent;
-  border: none;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -182,10 +177,11 @@ const filterFunction = () => {
 }
 
 .dropdown-content {
+  background-color: transparent;
   position: absolute;
   min-width: 230px;
   overflow: auto;
-  border: 1px solid #ddd;
+  border: none;
   z-index: 1;
   width: 100%;
 }
