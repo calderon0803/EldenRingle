@@ -5,8 +5,11 @@ export const useGuessCharacterStore = defineStore("guessCharacterStore", {
     return {
       characters: [],
       dailyCharacter: null,
+      dailyCharacterGuessed: false,
       characterNameInput: "",
       attempts: [],
+      chartDataValues: [],
+      chartDataDates: [],
     };
   },
   getters: {},

@@ -32,7 +32,9 @@
     "canvas-confetti": "^1.9.3",
     "pinia": "^2.1.7",
     "save": "^2.9.0",
-    "vue": "^3.4.15"
+    "vue": "^3.4.15",
+    "zingchart": "^2.9.13",
+    "zingchart-vue": "^3.0.0"
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.13.2",

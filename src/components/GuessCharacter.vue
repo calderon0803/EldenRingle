@@ -2,27 +2,28 @@
 import CharacterDropdownInput from "./anime/CharacterDropdownInput.vue";
 import { addAttempt } from "./anime/CharacterAttempt.js";
 import { useGuessCharacterStore } from "@/store/guessCharacterStore.js";
+import { useDataLoader } from "@/composables/dataLoader.js";
 import { ref, watch } from "vue";
 import confetti from "canvas-confetti";
 
 const guessCharacterStore = useGuessCharacterStore();
 
-const success = ref(false);
 const clue = ref(null);
 const attemptsLeftForClue = ref("3 intento/s para la siguiente pista");
 
-const selectOption = (option) => {
+const addOptionToAttempts = (option) => {
   guessCharacterStore.attempts.push(option);
   const index = guessCharacterStore.characters.indexOf(option);
   guessCharacterStore.characters.splice(index, 1);
   addAttempt(option);
   setTimeout(() => {
     if (option === guessCharacterStore.dailyCharacter) {
-      success.value = true;
+      guessCharacterStore.dailyCharacterGuessed = true;
       launchConfetti();
     }
+    updateLocalStorage();
+    useDataLoader();
   }, 1000);
-  updateLocalStorage();
 };
 
 const updateLocalStorage = () => {
@@ -35,14 +36,18 @@ const updateLocalStorage = () => {
       guessCharacterStore.attempts;
     todayGuessCharacterStorage.character_attempts_count =
       guessCharacterStore.attempts.length;
-    todayGuessCharacterStorage.guessed_character = success.value;
+    todayGuessCharacterStorage.guessed_character =
+      guessCharacterStore.dailyCharacterGuessed;
 
     localStorage.todayGuessCharacterStorage = JSON.stringify(
       todayGuessCharacterStorage
     );
+    if (guessCharacterStore.dailyCharacterGuessed) {
+      const history = JSON.parse(localStorage.historyGuessCharacterStorage);
+      history.push(todayGuessCharacterStorage);
+      localStorage.historyGuessCharacterStorage = JSON.stringify(history);
+    }
   }
-  console.log(JSON.parse(localStorage.todayAttempts));
-  console.log(JSON.parse(localStorage.todayGuessCharacterStorage));
 };
 
 const launchConfetti = () => {
@@ -165,9 +170,9 @@ watch(
         </div>
       </div>
       <CharacterDropdownInput
-        :finish="success"
+        :finish="guessCharacterStore.dailyCharacterGuessed"
         :game-options="guessCharacterStore.characters"
-        @send-attempt="selectOption($event)"
+        @send-attempt="addOptionToAttempts($event)"
       />
     </div>
     <div id="attempt-list"></div>
