@@ -550,13 +550,22 @@ input {
   justify-content: center;
 }
 
-#attempt-list {
+#character-attempt-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+#character-attempt-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   overflow-x: scroll;
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {

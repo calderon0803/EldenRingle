@@ -5,7 +5,7 @@
     "role": "Delantero",
     "number": 14,
     "country": "Francia",
-    "teams": ["Arsenal", "Francia"],
+    "teams": ["Arsenal", "Francia", "Francia JJOO"],
     "debut": "Rising Sun",
     "image": "https://i.ibb.co/9Gc0V2b/Adieu.png"
   },
@@ -15,7 +15,7 @@
     "role": "Delantero",
     "number": 9,
     "country": "Argentina",
-    "teams": ["Argentina"],
+    "teams": ["Argentina", "Argentina JJOO"],
     "debut": "Rising Sun",
     "image": "https://i.ibb.co/Ycf3vrJ/Aguin.png"
   },
@@ -34,8 +34,8 @@
     "gender": "Masculino",
     "role": "Defensa",
     "number": 26,
-    "country": "Japon",
-    "teams": ["UC Sampdoria", "Japon"],
+    "country": "Japón",
+    "teams": ["UC Sampdoria", "Japón", "Japón SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/7ND718M/Tomeya-Akai.png"
   },
@@ -44,7 +44,7 @@
     "gender": "Femenino",
     "role": "Otro",
     "number": "Ninguno",
-    "country": "Japon",
+    "country": "Japón",
     "teams": [],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/2YWkGbZ/Maki-Akamine.png"
@@ -75,7 +75,7 @@
     "role": "Defensa",
     "number": 2,
     "country": "Brasil",
-    "teams": ["Brasil"],
+    "teams": ["Brasil JJOO", "Brasil SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/GQ9Tqy9/Alberto.png"
   },
@@ -95,7 +95,7 @@
     "role": "Delantero",
     "number": 9,
     "country": "Mexico",
-    "teams": ["Mexico"],
+    "teams": ["Mexico SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/FnLjQ8z/Alvez.png"
   },
@@ -105,8 +105,8 @@
     "role": "Portero",
     "number": 1,
     "country": "Francia",
-    "teams": ["Francia"],
-    "debut": "J Boys' Challenge",
+    "teams": ["Francia SUB-16"],
+    "debut": "J Boy's Challenge",
     "image": "https://i.ibb.co/5LSbcdW/Amoro.png"
   },
   {
@@ -114,9 +114,9 @@
     "gender": "Femenino",
     "role": "Otro",
     "number": "Ninguno",
-    "country": "Japon",
+    "country": "Japón",
     "teams": [],
-    "debut": "Kids' Dream",
+    "debut": "Kid's Dream",
     "image": "https://i.ibb.co/bHtkXH5/Yayoi-Aoba.png"
   },
   {
@@ -124,9 +124,10 @@
     "gender": "Masculino",
     "role": "Centrocampista",
     "number": 20,
-    "country": "Japon",
+    "country": "Japón",
     "teams": [
-      "Japon",
+      "Japón JJOO",
+      "Japón SUB-20",
       "FC Albese",
       "Inter Primavera",
       "Inter Juniores",
@@ -141,7 +142,7 @@
     "role": "Defensa",
     "number": 4,
     "country": "Nigeria",
-    "teams": ["FC Groningen", "Nigeria"],
+    "teams": ["FC Groningen", "Nigeria SUB-22", "Nigeria JJOO"],
     "debut": "Golden-23",
     "image": "https://i.ibb.co/zxBhGWz/Babayan.png"
   },
@@ -151,7 +152,7 @@
     "role": "Centrocampista",
     "number": 24,
     "country": "Italia",
-    "teams": ["Juventus FC", "Italia"],
+    "teams": ["Juventus FC", "Italia SUB-23"],
     "debut": "Road to 2002",
     "image": "https://i.ibb.co/56q7VBs/Marco-Banchi.png"
   },
@@ -171,8 +172,8 @@
     "role": "Entrenador",
     "number": "Ninguno",
     "country": "Argentina",
-    "teams": ["Argentina"],
-    "debut": "J Boys' Challenge",
+    "teams": ["Argentina JJOO", "Argentina SUB-16"],
+    "debut": "J Boy's Challenge",
     "image": "https://i.ibb.co/mX3wLP5/Diego-Barbas.png"
   },
   {
@@ -221,7 +222,7 @@
     "role": "Delantero",
     "number": "?",
     "country": "Paises Bajos",
-    "teams": ["Arsenal FC", "Paises Bajos"],
+    "teams": ["Arsenal FC", "Holanda"],
     "debut": "Road to 2002",
     "image": "https://i.ibb.co/vdjHYrj/Default.jpg"
   },
@@ -231,7 +232,7 @@
     "role": "Defensa",
     "number": 4,
     "country": "España",
-    "teams": ["Real Madrid CF", "España"],
+    "teams": ["Real Madrid CF", "España JJOO", "España"],
     "debut": "Road to 2002",
     "image": "https://i.ibb.co/Rz1gQ0C/Blueno.png"
   },
@@ -241,7 +242,7 @@
     "role": "Desconocido",
     "number": 22,
     "country": "Nigeria",
-    "teams": ["FC Albese", "Nigeria"],
+    "teams": ["FC Albese", "Nigeria JJOO", "Nigeria SUB-22"],
     "debut": "Rising Sun",
     "image": "https://i.ibb.co/LhLV9nr/Bobang.png"
   },
@@ -251,7 +252,7 @@
     "role": "Centrocampista",
     "number": 13,
     "country": "Alemania",
-    "teams": ["Alemania"],
+    "teams": ["Germany"],
     "debut": "Golden-23",
     "image": "https://i.ibb.co/qnHBdH2/Bollack.png"
   },
@@ -261,8 +262,8 @@
     "role": "Delantero",
     "number": 11,
     "country": "Francia",
-    "teams": ["Francia"],
-    "debut": "J Boys' Challenge",
+    "teams": ["Francia SUB-16", "Francia JJOO"],
+    "debut": "J Boy's Challenge",
     "image": "https://i.ibb.co/qBpfVrr/Bossi.png"
   },
   {
@@ -271,7 +272,7 @@
     "role": "Centrocampista",
     "number": 6,
     "country": "Brasil",
-    "teams": ["Brasil"],
+    "teams": ["Brasil JJOO", "Brasil SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/mJj8bxn/Branca.png"
   },
@@ -281,7 +282,7 @@
     "role": "Centrocampista",
     "number": 4,
     "country": "Australia",
-    "teams": ["Parma", "Australia"],
+    "teams": ["Parma", "Australia SUB-22"],
     "debut": "Golden-23",
     "image": "https://i.ibb.co/w7mJXDp/Brescias.png"
   },
@@ -291,7 +292,7 @@
     "role": "Defensa",
     "number": 4,
     "country": "Suecia",
-    "teams": ["Suecia"],
+    "teams": ["Suecia SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/hxNsYf3/Brolin.png"
   },
@@ -311,7 +312,7 @@
     "role": "Defensa",
     "number": 4,
     "country": "Tailandia",
-    "teams": ["Atletico de Madrid", "Tailandia"],
+    "teams": ["Atletico de Madrid", "Tailandia SUB-22", "Tailandia SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/FnHfFv9/Singprasert-Bunnag.png"
   },
@@ -321,7 +322,7 @@
     "role": "Portero",
     "number": 1,
     "country": "España",
-    "teams": ["España", "Real Madrid CF"],
+    "teams": ["España", "España JJOO", "Real Madrid CF"],
     "debut": "Road to 2002",
     "image": "https://i.ibb.co/Jyz5FtT/Callusias.webp"
   },
@@ -331,7 +332,7 @@
     "role": "Entrenador",
     "number": "Ninguno",
     "country": "España",
-    "teams": ["España"],
+    "teams": ["España JJOO"],
     "debut": "Rising Sun",
     "image": "https://i.ibb.co/wcssRtH/Camacho.webp"
   },
@@ -371,7 +372,7 @@
     "role": "Defensa",
     "number": 4,
     "country": "Brasil",
-    "teams": ["Brasil"],
+    "teams": ["Brasil JJOO", "Brasil SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/tbKp4bC/Casa-Grande.webp"
   },
@@ -381,7 +382,7 @@
     "role": "Delantero",
     "number": 9,
     "country": "Korea del Sur",
-    "teams": ["Borussia Mönchengladbach", "Korea del Sur"],
+    "teams": ["Borussia Mönchengladbach", "South Korea SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/X2YdfVW/Cha-In-Cheon.webp"
   },
@@ -391,7 +392,7 @@
     "role": "Delantero",
     "number": 9,
     "country": "Camerún",
-    "teams": ["Camerún"],
+    "teams": ["Camerún SUB-20"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/g49pQfm/Raymond-Chandler.webp"
   },
@@ -411,7 +412,7 @@
     "role": "Delantero",
     "number": 9,
     "country": "Dinamarca",
-    "teams": ["Dinamarca"],
+    "teams": ["Dinamarca SUB-22", "Dinamarca SUB-21"],
     "debut": "Rising Sun",
     "image": "https://i.ibb.co/jVXwVgS/Christiansen.jpg"
   },
@@ -431,7 +432,7 @@
     "role": "Entrenador",
     "number": "Ninguno",
     "country": "Australia",
-    "teams": ["Australia"],
+    "teams": ["Australia SUB-22"],
     "debut": "Golden-23",
     "image": "https://i.ibb.co/KGNCfkD/Giis-Coleman.webp"
   },
@@ -451,7 +452,7 @@
     "role": "Delantero",
     "number": 10,
     "country": "Inglaterra",
-    "teams": ["Liverpool", "Inglaterra"],
+    "teams": ["Liverpool", "England"],
     "debut": "Road to 2002",
     "image": "https://i.ibb.co/T8N5wn9/Cowen.webp"
   },
@@ -466,12 +467,18 @@
     "image": "https://i.ibb.co/HFFTx5W/Crepos.webp"
   },
   {
-    "name": "Brian Cruyfford",
+    "name": "Brian Kluivoort",
     "gender": "Masculino",
     "role": "Delantero",
     "number": 10,
     "country": "Holanda",
-    "teams": ["Manchester United", "AFC Ajax", "Holanda"],
+    "teams": [
+      "Manchester United",
+      "AFC Ajax",
+      "Holanda JJOO",
+      "Holanda SUB-20",
+      "Holanda SUB-21"
+    ],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/NStwzGb/Brian-Cruyfford.jpg"
   },
@@ -481,7 +488,7 @@
     "role": "Defensa",
     "number": 6,
     "country": "Australia",
-    "teams": ["Australia"],
+    "teams": ["Australia SUB-22"],
     "debut": "Golden-23",
     "image": "https://i.ibb.co/r2Qgn1j/Daje.webp"
   },
@@ -501,7 +508,7 @@
     "role": "Centrocampista",
     "number": 26,
     "country": "Holanda",
-    "teams": ["Juventus FC", "Holanda"],
+    "teams": ["Juventus FC", "Holanda JJOO", "Holanda"],
     "debut": "Road to 2002",
     "image": "https://i.ibb.co/C5JXYMm/Davi-JUV-DT-1.webp"
   },
@@ -541,8 +548,13 @@
     "role": "Delantero",
     "number": 10,
     "country": "Argentina",
-    "teams": ["Argentina", "Boca Juniors", "SSC Napoli"],
-    "debut": "J Boys' Challenge",
+    "teams": [
+      "Argentina JJOO",
+      "Argentina SUB-20",
+      "Boca Juniors",
+      "SSC Napoli"
+    ],
+    "debut": "J Boy's Challenge",
     "image": "https://i.ibb.co/kQbtMgb/imagen-2024-05-14-001244803.png"
   },
   {
@@ -551,7 +563,7 @@
     "role": "Defensa",
     "number": 2,
     "country": "Holanda",
-    "teams": ["Holanda", "AFC Ajax"],
+    "teams": ["Holanda JJOO", "Holanda Youth", "AFC Ajax"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/k6Rm22D/Leon-WY.webp"
   },
@@ -561,7 +573,7 @@
     "role": "Portero",
     "number": 1,
     "country": "Holanda",
-    "teams": ["Holanda", "AFC Ajax"],
+    "teams": ["Holanda JJOO", "Holanda SUB-22", "AFC Ajax"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/QXBg1dC/imagen-2024-05-14-000441309.png"
   },
@@ -581,7 +593,7 @@
     "role": "Portero",
     "number": 1,
     "country": "Alemania",
-    "teams": ["Bayern Munich"],
+    "teams": ["FC Bayern Munich"],
     "debut": "Road to 2002",
     "image": "https://i.ibb.co/P5fcJ4s/Drener.webp"
   },
@@ -591,7 +603,7 @@
     "role": "Centrocampista",
     "number": 8,
     "country": "Brasil",
-    "teams": ["Brasil"],
+    "teams": ["Brasil JJOO", "Brasil SUB-22"],
     "debut": "Battle of World Youth",
     "image": "https://i.ibb.co/QjhtLsq/Duhgo-DT-1.webp"
   },
@@ -601,8 +613,424 @@
     "role": "Delantero",
     "number": 9,
     "country": "Australia",
-    "teams": ["Newcastle United FC", "Australia"],
+    "teams": ["Newcastle United FC", "Australia SUB-22"],
     "debut": "Golden-23",
     "image": "https://i.ibb.co/BghxcJV/Duviga.webp"
+  },
+  {
+    "name": "East",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 16,
+    "country": "Nigeria",
+    "teams": ["Nigeria JJOO", "Nigeria SUB-22", "West Ham United FC"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/Zm1y3k9/East-PNG.webp"
+  },
+  {
+    "name": "Luis Enpoli",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 21,
+    "country": "España",
+    "teams": ["España", "Real Madrid CF", "FC Barcelona"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/6sYxfFr/Luis-Enpoli.webp"
+  },
+  {
+    "name": "Esnander",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 11,
+    "country": "Argentina",
+    "teams": ["Argentina", "Juventus FC"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/WBtS2r8/Esnander-ch23-Rt2002.webp"
+  },
+  {
+    "name": "Ricardo Espadas",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "Mexico",
+    "teams": ["Mexico JJOO", "Mexico SUB-20", "Everton FC"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/y0ypndx/Espadas.webp"
+  },
+  {
+    "name": "Etaw",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Camerún",
+    "teams": ["Camerún JJOO"],
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/7Ghbz5m/Etaw-PNG.webp"
+  },
+  {
+    "name": "Fabio Almieja",
+    "gender": "Masculino",
+    "role": "Otro",
+    "number": "Ninguno",
+    "country": "Brasil",
+    "teams": ["Ninguno"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/bJnFrfM/Fabio-PNG.webp"
+  },
+  {
+    "name": "Luis Fago",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 10,
+    "country": "Portugal",
+    "teams": ["Portugal", "Real Madrid CF", "FC Barcelona"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/PcCqZBm/Fago7dq.webp"
+  },
+  {
+    "name": "Flavio Concés",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 16,
+    "country": "Brasil",
+    "teams": ["Real Madrid CF"],
+    "debut": "Overseas Fierce Fight",
+    "image": "https://i.ibb.co/55p3nWK/Flavio-Conces-ch8-OFF-1.webp"
+  },
+  {
+    "name": "Pedro Fonseca",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 6,
+    "country": "Portugal",
+    "teams": ["FC Barcelona", "Portugal"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/2Yvj8mg/Pedro-Fonseca-2001-1.webp"
+  },
+  {
+    "name": "Franco",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 11,
+    "country": "Italia",
+    "teams": ["Inter Primavera", "Inter Juniores"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/YpKkQhz/Franco-CTJ.webp"
+  },
+  {
+    "name": "Fredericks",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 8,
+    "country": "Suecia",
+    "teams": ["Club Francés Desconocido", "Suecia SUB-20"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/gFJZTsY/Frederiks-Sweden-WY-DT.webp"
+  },
+  {
+    "name": "Yoshiko Fujisawa",
+    "gender": "Femenino",
+    "role": "Otro",
+    "number": "Ninguno",
+    "country": "Japón",
+    "teams": ["Furano Middle School"],
+    "debut": "Boy's Fight",
+    "image": "https://i.ibb.co/rxjxkP3/Yoshiko-Fujisawa-S2-2018-1.webp"
+  },
+  {
+    "name": "Kotaro Furukawa",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 26,
+    "country": "Japón",
+    "teams": [
+      "Japón JJOO",
+      "Futsal Japón",
+      "Japón SUB-22",
+      "Jousei High School"
+    ],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/TkzrfLz/Furukawa.webp"
+  },
+  {
+    "name": "Galtoni",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "Argentina",
+    "teams": ["Argentina JJOO", "Argentina SUB-16"],
+    "debut": "J Boy's Challenge",
+    "image": "https://i.ibb.co/hXC8Bnx/imagen-2024-05-22-164510382.png"
+  },
+  {
+    "name": "Galvan",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 5,
+    "country": "Argentina",
+    "teams": ["Argentina JJOO", "Argentina SUB-20", "Argentina SUB-16"],
+    "debut": "J Boy's Challenge",
+    "image": "https://i.ibb.co/CJB35Ng/Galvan-Argentina-DT-1.webp"
+  },
+  {
+    "name": "Minato Gamo",
+    "gender": "Masculino",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "Argentina",
+    "teams": ["Japón JJOO", "Japón SUB-22", "Japón SUB-20"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/MsdnZqx/Minato-Gamo-PSX-0.webp"
+  },
+  {
+    "name": "Garcia",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 8,
+    "country": "Mexico",
+    "teams": ["Mexico SUB-20"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/CM4d4Ld/Garcia-Mexico-WY-DT.webp"
+  },
+  {
+    "name": "Gati",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 14,
+    "country": "España",
+    "teams": ["Real Madrid CF"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/V9Lvk7p/Gati-ch108-RT-0.webp"
+  },
+  {
+    "name": "Golluvate",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 9,
+    "country": "Italia",
+    "teams": ["Italia SUB-16"],
+    "debut": "J Boy's Challenge",
+    "image": "https://i.ibb.co/tLSSv7z/Golluvate.webp"
+  },
+  {
+    "name": "Salvatore Gentile",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 5,
+    "country": "Italia",
+    "teams": ["Juventus FC", "Italia SUB-21", "Juventus Primavera"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/JkB0ZgP/Gentile-JUV-DT-1.webp"
+  },
+  {
+    "name": "Mario Goethe",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 19,
+    "country": "Alemania",
+    "teams": ["Alemania JJOO", "Alemania SUB-21"],
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/rtdwSgd/imagen-2024-05-22-165350515.png"
+  },
+  {
+    "name": "Gordoba Gonzales",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": "?",
+    "country": "España",
+    "teams": ["FC Barcelona", "FC Barcelona B", "España"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/VTkKVjP/imagen-2024-05-22-165423940.png"
+  },
+  {
+    "name": "Iuliano Gozza",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 21,
+    "country": "Italia",
+    "teams": ["Italia"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/g9hQs3X/imagen-2024-05-22-165510253.png"
+  },
+  {
+    "name": "Josep Grandios",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 4,
+    "country": "España",
+    "teams": ["España JJOO", "España", "FC Barcelona"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/55gd9m8/imagen-2024-05-22-165734405.png"
+  },
+  {
+    "name": "Gransen",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 2,
+    "country": "Dinamarca",
+    "teams": ["Dinamarca SUB-21", "Dinamarca SUB-22"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/pWKfjvC/imagen-2024-05-22-165621305.png"
+  },
+  {
+    "name": "Haas",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 11,
+    "country": "Dinamarca",
+    "teams": ["Dinamarca SUB-21", "Dinamarca SUB-22"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/N2wPQQk/Haas-PNG.webp"
+  },
+  {
+    "name": "Oliver Hahn",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "Alemania",
+    "teams": ["Alemania"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/cw2SPsV/Oliver-Han.webp"
+  },
+  {
+    "name": "Hansen",
+    "gender": "Masculino",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "Suecia",
+    "teams": ["Suecia"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/brgy3KV/Hansen-PNG.webp"
+  },
+  {
+    "name": "Toshihiro Hattori",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 6,
+    "country": "Japón",
+    "teams": ["Jubilo Iwata"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/vjh2r5y/Hattori-PNG.webp"
+  },
+  {
+    "name": "Azumi Hayakawa",
+    "gender": "Masculino",
+    "role": "Otro",
+    "number": "Ninguno",
+    "country": "Francia/Japón",
+    "teams": ["Ninguno"],
+    "debut": "J Boy's Challenge",
+    "image": "https://i.ibb.co/ggDVrL1/imagen-2024-05-26-214638657.png"
+  },
+  {
+    "name": "Gino Hernandez",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "Italia",
+    "teams": [
+      "Italia",
+      "Italia SUB-22",
+      "Italia SUB-21",
+      "Italia SUB-16",
+      "Inter Juniores",
+      "Inter Primavera",
+      "Inter Milan"
+    ],
+    "debut": "",
+    "image": "https://i.ibb.co/w6XBHW3/imagen-2024-05-26-214939738.png"
+  },
+  {
+    "name": "Heuer",
+    "gender": "Masculino",
+    "role": "Otro",
+    "number": "Ninguno",
+    "country": "Brasil",
+    "teams": ["Ninguno"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/pXcW85C/Ewell-PNG.webp"
+  },
+  {
+    "name": "Hideto Aoba",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": "?",
+    "country": "Japón",
+    "teams": ["Shumei Gakkan MS"],
+    "debut": "",
+    "image": "https://i.ibb.co/Y2Tc6PX/Hideto-Aoba-Memories-3-0.webp"
+  },
+  {
+    "name": "Ryoma Hino",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Uruguay",
+    "teams": ["Uruguay SUB-20", "Montevideo", "River Plate"],
+    "debut": "Battle of World Youth",
+    "image": "https://i.ibb.co/H2ZpbPS/Hino-Uruguay-DT-1.webp"
+  },
+  {
+    "name": "Sota Hiraoka",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 17,
+    "country": "Japón",
+    "teams": ["Japón SUB-19", "Kunimi Institute"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/CQtms1M/Hiraoka-ch12-G23-1.webp"
+  },
+  {
+    "name": "Roberto Hongo",
+    "gender": "Masculino",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "Brasil",
+    "teams": ["Brasil JJOO", "Brasil SUB-20"],
+    "debut": "Kid's Dream",
+    "image": "https://i.ibb.co/2c4sXcL/imagen-2024-05-26-220859830.png"
+  },
+  {
+    "name": "Minoru Honma",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 10,
+    "country": "Japón",
+    "teams": ["Japón SUB-20", "Musashi MIddle School", "Musashi FC"],
+    "debut": "Boy's Fight",
+    "image": "https://i.ibb.co/khg4Y0W/Honma.webp"
+  },
+  {
+    "name": "Hugo Ramirez",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 10,
+    "country": "Mexico",
+    "teams": [
+      "Mexico JJOO",
+      "Club Mexicano Desconocido",
+      "Club Europeo Desconocido"
+    ],
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/hdzQsbG/Ramirez.webp"
+  },
+  {
+    "name": "Kojiro Hyuga",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Japón",
+    "teams": [
+      "Japón JJOO",
+      "Japón SUB-16",
+      "Japón SUB-20",
+      "Japón",
+      "Toho",
+      "Meiwa FC",
+      "Reggiana",
+      "Juventus FC"
+    ],
+    "debut": "Boy's Fight",
+    "image": "https://i.ibb.co/1bz1WW5/Kojiro-S2-2018-1.webp"
   }
 ]

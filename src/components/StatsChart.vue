@@ -46,10 +46,12 @@ const config = computed(() => {
           {
             rule: "%data-success == 1",
             "background-color": "green",
+            borderColor: "green",
           },
           {
             rule: "%data-success == 0",
             "background-color": "red",
+            borderColor: "red",
           },
         ],
       },
@@ -100,6 +102,19 @@ const config = computed(() => {
     },
     tooltip: {
       visible: true,
+      text: "Intentos: %v<br>Fecha: %data-dates",
+      rules: [
+        {
+          rule: "%data-success == 1",
+          "background-color": "green",
+          borderColor: "black",
+        },
+        {
+          rule: "%data-success == 0",
+          "background-color": "red",
+          borderColor: "black",
+        },
+      ],
     },
     series: props.dataSeries,
   };

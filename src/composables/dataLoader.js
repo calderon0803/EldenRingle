@@ -1,7 +1,7 @@
 import { useGuessCharacterStore } from "@/store/guessCharacterStore.js";
 import { showToast } from "@/utils/showToast.js";
 import { getDailyNumber } from "@/utils/dailyNumber";
-import { addAttempt } from "@/components/anime/CharacterAttempt.js";
+import { addAttempt } from "@/components/character/CharacterAttempt.js";
 
 export async function useDataLoader() {
   checkDeviceDate()
@@ -79,7 +79,7 @@ function crateLocalStorage() {
     const lastDay = JSON.parse(localStorage.todayGuessCharacterStorage);
     const history = JSON.parse(localStorage.historyGuessCharacterStorage);
     history.push(lastDay);
-    localStorage.removeItem("todayGuessCharacterStorage");
+    localStorage.removeItem("todayAttempts");
     localStorage.todayGuessCharacterStorage = JSON.stringify(todayStats);
   } else {
     loadLocalStorage();
@@ -88,7 +88,11 @@ function crateLocalStorage() {
 
 function loadLocalStorage() {
   const guessCharacterStore = useGuessCharacterStore();
-  guessCharacterStore.attempts = getLocalStorageTodayAttempts();
+  getLocalStorageTodayAttempts();
+  const attemptList = document.getElementById("character-attempt-list");
+  while (attemptList.firstChild) {
+    attemptList.removeChild(attemptList.firstChild);
+  }
   guessCharacterStore.attempts.forEach((attempt) => {
     const char = guessCharacterStore.characters.find(
       (character) => character.name === attempt.name
@@ -103,10 +107,11 @@ function loadLocalStorage() {
 }
 
 function getLocalStorageTodayAttempts() {
+  const guessCharacterStore = useGuessCharacterStore();
   if (localStorage.todayAttempts) {
-    return JSON.parse(localStorage.todayAttempts);
+    guessCharacterStore.attempts = JSON.parse(localStorage.todayAttempts);
   } else {
-    return [];
+    guessCharacterStore.attempts = [];
   }
 }
 
@@ -155,7 +160,7 @@ async function checkDeviceDate() {
   }
 }
 
-function getDataForChart() {
+export function getDataForChart() {
   const guessCharacterStore = useGuessCharacterStore();
   const series = [];
   const unifyData = unifyValues();
@@ -163,6 +168,7 @@ function getDataForChart() {
     values: unifyData.values,
     "data-success": unifyData.successValues,
     text: "Personajes",
+    "data-dates": unifyData.dates,
     "line-color": "black",
     "legend-item": {
       "background-color": "#black",
