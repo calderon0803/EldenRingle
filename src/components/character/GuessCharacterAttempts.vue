@@ -13,11 +13,11 @@ const guessCharacterStore = useGuessCharacterStore();
         class="input-flex-group attempt"
       >
         <div class="header">Personaje</div>
-        <div class="header">Género</div>
-        <div class="header">Posición</div>
-        <div class="header">Dorsal</div>
-        <div class="header">País</div>
-        <div class="header">Arco</div>
+        <div class="header">Gategoría</div>
+        <div class="header">Ubicación</div>
+        <div class="header">Runas</div>
+        <div class="header">Drop</div>
+        <div class="header">Salud</div>
       </fieldset>
     </div>
     <div id="character-attempt-list"></div>

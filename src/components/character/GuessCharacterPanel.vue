@@ -91,7 +91,7 @@ const toggleClue = (clueName) => {
   if (clue.value === clueText) {
     clueText = null;
   } else {
-    if (clueName === "teams") {
+    if (clueName === "drops") {
       if (clue.value == clueText.join(", ")) {
         clueText = null;
       } else {
@@ -117,30 +117,30 @@ watch(
       attemptsLeftForClue.value = "No quedan intentos para pistas adicionales";
       clue1.classList.remove("clue-btn-disabled");
       clue1.classList.add("clue-btn");
-      clue1.onclick = () => toggleClue("role");
+      clue1.onclick = () => toggleClue("location");
       clue2.classList.remove("clue-btn-disabled");
       clue2.classList.add("clue-btn");
-      clue2.onclick = () => toggleClue("country");
+      clue2.onclick = () => toggleClue("healthPoints");
       clue3.classList.remove("clue-btn-disabled");
       clue3.classList.add("clue-btn");
-      clue3.onclick = () => toggleClue("teams");
+      clue3.onclick = () => toggleClue("drops");
     } else {
       if (newVal.length >= 5) {
         attemptsLeftForClue.value =
           7 - newVal.length + " intento/s para la siguiente pista";
         clue1.classList.remove("clue-btn-disabled");
         clue1.classList.add("clue-btn");
-        clue1.onclick = () => toggleClue("role");
+        clue1.onclick = () => toggleClue("location");
         clue2.classList.remove("clue-btn-disabled");
         clue2.classList.add("clue-btn");
-        clue2.onclick = () => toggleClue("country");
+        clue2.onclick = () => toggleClue("healthPoints");
       } else {
         if (newVal.length >= 3) {
           attemptsLeftForClue.value =
             5 - newVal.length + " intento/s para la siguiente pista";
           clue1.classList.remove("clue-btn-disabled");
           clue1.classList.add("clue-btn");
-          clue1.onclick = () => toggleClue("role");
+          clue1.onclick = () => toggleClue("location");
         } else {
           attemptsLeftForClue.value =
             3 - newVal.length + " intento/s para la siguiente pista";
@@ -154,19 +154,19 @@ watch(
 
 <template>
   <div id="blackboard" class="blackboard mt-5">
-    <p class="gametitle">¡ADIVINA EL PERSONAJE DE CAPTAIN TSUBASA DE HOY!</p>
+    <p class="gametitle mx-3">¡ADIVINA EL PERSONAJE DE ELDEN RING DE HOY!</p>
     <div class="clues">
       <div id="clue1" class="clue-btn-disabled">
         <span class="mdi mdi-strategy mdi-24px"></span>
-        <p>ROL</p>
+        <p>LOCATION</p>
       </div>
       <div id="clue2" class="clue-btn-disabled">
         <span class="mdi mdi-flag-variant mdi-24px"></span>
-        <p>PAÍS</p>
+        <p>HEALTH</p>
       </div>
       <div id="clue3" class="clue-btn-disabled">
         <span class="mdi mdi-shield-crown mdi-24px"></span>
-        <p>EQUIPOS</p>
+        <p>DROPS</p>
       </div>
     </div>
     <div class="clue">

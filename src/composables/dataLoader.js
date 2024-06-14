@@ -24,7 +24,7 @@ export async function useDataLoader() {
 
 function loadData() {
   const guessCharacterStore = useGuessCharacterStore();
-  fetch("/data/captain-tsubasa-characters.json")
+  fetch("/data/elden-ring-characters.json")
     .then(function (res) {
       return res.json();
     })

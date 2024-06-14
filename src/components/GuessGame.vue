@@ -9,7 +9,7 @@ const gameMode = ref("character");
 <template>
   <div class="panel">
     <div class="game-panel">
-      <img class="logo" src="@/assets/logo.png" />
+      <img class="logo" src="@/assets/gran-runa.png" />
       <fieldset class="input-flex-group mt-3">
         <button class="button gamemode" @click="gameMode = 'character'">
           <img class="svglogo" src="/src/assets/guess-player-icon.svg" />

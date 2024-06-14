@@ -40,7 +40,7 @@ onMounted(async () => {
   grid-row-gap: 0;
   height: 100vh;
   overflow-x: hidden;
-  background-image: url("@/assets/background.jpg");
+  background-image: url("@/assets/elden-ring-bg.webp");
   background-size: cover;
   background-position: center;
 }

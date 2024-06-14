@@ -733,7 +733,7 @@
     "role": "Otro",
     "number": "Ninguno",
     "country": "Japón",
-    "teams": ["Furano Middle School"],
+    "teams": ["Furano"],
     "debut": "Boy's Fight",
     "image": "https://i.ibb.co/rxjxkP3/Yoshiko-Fujisawa-S2-2018-1.webp"
   },
@@ -743,12 +743,7 @@
     "role": "Centrocampista",
     "number": 26,
     "country": "Japón",
-    "teams": [
-      "Japón JJOO",
-      "Futsal Japón",
-      "Japón SUB-22",
-      "Jousei High School"
-    ],
+    "teams": ["Japón JJOO", "Futsal Japón", "Japón SUB-22", "Jousei"],
     "debut": "Golden-23",
     "image": "https://i.ibb.co/TkzrfLz/Furukawa.webp"
   },
@@ -914,7 +909,7 @@
   },
   {
     "name": "Azumi Hayakawa",
-    "gender": "Masculino",
+    "gender": "Femenino",
     "role": "Otro",
     "number": "Ninguno",
     "country": "Francia/Japón",
@@ -956,7 +951,7 @@
     "role": "Delantero",
     "number": "?",
     "country": "Japón",
-    "teams": ["Shumei Gakkan MS"],
+    "teams": ["Shumei Gakkan"],
     "debut": "",
     "image": "https://i.ibb.co/Y2Tc6PX/Hideto-Aoba-Memories-3-0.webp"
   },
@@ -996,7 +991,7 @@
     "role": "Delantero",
     "number": 10,
     "country": "Japón",
-    "teams": ["Japón SUB-20", "Musashi MIddle School", "Musashi FC"],
+    "teams": ["Japón SUB-20", "Musashi"],
     "debut": "Boy's Fight",
     "image": "https://i.ibb.co/khg4Y0W/Honma.webp"
   },
@@ -1031,6 +1026,148 @@
       "Juventus FC"
     ],
     "debut": "Boy's Fight",
-    "image": "https://i.ibb.co/1bz1WW5/Kojiro-S2-2018-1.webp"
+    "image": "https://i.ibb.co/b19cJKz/imagen-2024-05-27-193853613.png"
+  },
+  {
+    "name": "Isamu Ichijo",
+    "gender": "Masculino",
+    "role": "Portero",
+    "number": 1,
+    "country": "Japón",
+    "teams": ["Nankatsu", "Otomo"],
+    "debut": "Boy's Fight",
+    "image": "https://i.ibb.co/99Pwp2B/imagen-2024-05-27-193141530.png"
+  },
+  {
+    "name": "Akira Ichinose",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Japón",
+    "teams": ["Japón SUB-20", "Musashi"],
+    "debut": "Kid's Dream",
+    "image": "https://i.ibb.co/7CL4Sts/Ichinose.webp"
+  },
+  {
+    "name": "Ienista",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 24,
+    "country": "España",
+    "teams": ["España JJOO", "FC Barcelona"],
+    "debut": "Rising Sun",
+    "image": "https://i.ibb.co/3vhMXRc/Ienista-ND-DT.webp"
+  },
+  {
+    "name": "Gakuto Igawa",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 32,
+    "country": "Japón",
+    "teams": ["Japón JJOO", "Japón SUB-22", "Bolanos FC"],
+    "debut": "Golden-23",
+    "image": "https://i.ibb.co/Dw8Hx1Z/Gakuto-Igawa-Japan-DT-1.webp"
+  },
+  {
+    "name": "Hayato Igawa",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 38,
+    "country": "Japón",
+    "teams": ["Japón", "Urawa Red Diamonds"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/BHD0w88/Hayato-Igawa-RT-1.webp"
+  },
+  {
+    "name": "Noriko Igawa",
+    "gender": "Femenino",
+    "role": "Otro",
+    "number": "Ninguno",
+    "country": "Japón",
+    "teams": ["Ninguno"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/kqKbqZw/imagen-2024-05-27-193318986.png"
+  },
+  {
+    "name": "Filippo Inzars",
+    "gender": "Masculino",
+    "role": "Delantero",
+    "number": 9,
+    "country": "Italia",
+    "teams": ["Italia", "Juventus FC"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/7NDtpHC/Filippo-Inzars-2001-1.webp"
+  },
+  {
+    "name": "Tetsuo Ishida",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": "?",
+    "country": "Japón",
+    "teams": ["Japón SUB-16", "Minamiuwa"],
+    "debut": "Boy's Fight",
+    "image": "https://i.ibb.co/6JJyb7G/imagen-2024-05-27-193419150.png"
+  },
+  {
+    "name": "Ryo Ishizaki",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 4,
+    "country": "Japón",
+    "teams": [
+      "Japón JJOO",
+      "Japón SUB-20",
+      "Japón SUB-22",
+      "Nankatsu",
+      "Jubilo Iwata"
+    ],
+    "debut": "Kid's Dream",
+    "image": "https://i.ibb.co/ZJ34JRc/imagen-2024-05-27-193450704.png"
+  },
+  {
+    "name": "Ivan Inureta",
+    "gender": "Masculino",
+    "role": "Entrenador",
+    "number": "Ninguno",
+    "country": "España",
+    "teams": ["Deportivo La Coruña"],
+    "debut": "Overseas Fierce Fight",
+    "image": "https://i.ibb.co/G39nrnH/Ivan-Inureta-ch57-OFF-1.webp"
+  },
+  {
+    "name": "Ivangel",
+    "gender": "Masculino",
+    "role": "Defensa",
+    "number": 6,
+    "country": "España",
+    "teams": ["España", "Real Madrid CF"],
+    "debut": "Road to 2002",
+    "image": "https://i.ibb.co/w6TvLDL/Ivangel-ch91-RT-1.webp"
+  },
+  {
+    "name": "Kenichi Iwami",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 5,
+    "country": "Japón",
+    "teams": ["Nankatsu"],
+    "debut": "Kid's Dream",
+    "image": "https://i.ibb.co/WyksxpR/Kenichi-Iwami-S1-2018-1.webp"
+  },
+  {
+    "name": "Mamoru Izawa",
+    "gender": "Masculino",
+    "role": "Centrocampista",
+    "number": 8,
+    "country": "Japón",
+    "teams": [
+      "Japón JJOO",
+      "Japón SUB-22",
+      "Japón SUB-16",
+      "Nankatsu",
+      "Yokohama F. Marinos"
+    ],
+    "debut": "Kid's Dream",
+    "image": "https://i.ibb.co/b23z95c/imagen-2024-05-27-193751324.png"
   }
 ]

@@ -1,5 +1,5 @@
 import { useGuessCharacterStore } from "@/store/guessCharacterStore.js";
-import { attemptFields, arcsOrder } from "../config/attempt-info-config.js";
+import { attemptFields } from "../config/attempt-info-config.js";
 
 export const addAttempt = (attempt) => {
   const guessCharacterStore = useGuessCharacterStore();
@@ -28,68 +28,68 @@ export const addAttempt = (attempt) => {
     setTimeout(() => {
       const attemptFieldDiv = document.createElement("div");
       attemptFieldDiv.classList.add("attempt-info");
-      if (guessCharacterStore.dailyCharacter[field] == attempt[field]) {
-        attemptFieldDiv.classList.add("correct");
-      } else {
-        attemptFieldDiv.classList.add("incorrect");
-      }
       const attemptFieldSpan = document.createElement("span");
       const attemptFieldP = document.createElement("p");
-      const attemptRoleSpan = document.createElement("span");
-      if (field === "role") {
-        if (attempt[field] === "Delantero") {
-          attemptRoleSpan.classList.add(
-            "mdi",
-            "mdi-page-layout-header",
-            "mdi-24px"
-          );
-          attemptFieldP.appendChild(attemptRoleSpan);
-        } else if (attempt[field] === "Centrocampista") {
-          attemptRoleSpan.classList.add(
-            "mdi",
-            "mdi-page-layout-body",
-            "mdi-24px"
-          );
-          attemptFieldP.appendChild(attemptRoleSpan);
-        } else if (attempt[field] === "Defensa") {
-          attemptRoleSpan.classList.add(
-            "mdi",
-            "mdi-page-layout-footer",
-            "mdi-24px"
-          );
-          attemptFieldP.appendChild(attemptRoleSpan);
-        } else if (attempt[field] === "Portero") {
-          attemptRoleSpan.classList.add(
-            "mdi",
-            "mdi-hand-front-left-outline",
-            "mdi-24px"
-          );
-          attemptFieldP.appendChild(attemptRoleSpan);
+
+      if (field === "runeDrop") {
+        //first rune drop
+        const runeDrops = [];
+        attempt.drops.forEach((drop) => {
+          if (drop.includes("Runes")) {
+            runeDrops.push(drop);
+          }
+        });
+        const dailyCharacterRuneDrops = [];
+        guessCharacterStore.dailyCharacter.drops.forEach((drop) => {
+          if (drop.includes("Runes")) {
+            dailyCharacterRuneDrops.push(drop);
+          }
+        });
+        if (dailyCharacterRuneDrops[0] == runeDrops[0]) {
+          attemptFieldDiv.classList.add("correct");
         } else {
-          attemptFieldP.innerHTML = attempt[field];
+          attemptFieldDiv.classList.add("incorrect");
+          if (dailyCharacterRuneDrops[0] > runeDrops[0]) {
+            attemptFieldSpan.classList.add("inferior");
+          } else if (dailyCharacterRuneDrops[0] < runeDrops[0]) {
+            attemptFieldSpan.classList.add("superior");
+          }
         }
-      } else if (field === "number") {
+        attemptFieldP.innerHTML = runeDrops[0];
+      } else if (field === "itemDrop") {
+        //first item drop
+        const itemDrops = [];
+        attempt.drops.forEach((drop) => {
+          if (!drop.includes("Runes")) {
+            itemDrops.push(drop);
+          }
+        });
+        const dailyCharacterItemDrops = [];
+        guessCharacterStore.dailyCharacter.drops.forEach((drop) => {
+          if (!drop.includes("Runes")) {
+            dailyCharacterItemDrops.push(drop);
+          }
+        });
+        if (dailyCharacterItemDrops[0] == itemDrops[0]) {
+          attemptFieldDiv.classList.add("correct");
+        } else {
+          attemptFieldDiv.classList.add("incorrect");
+        }
+        attemptFieldP.innerHTML = itemDrops[0];
+      } else {
+        if (guessCharacterStore.dailyCharacter[field] == attempt[field]) {
+          attemptFieldDiv.classList.add("correct");
+        } else {
+          attemptFieldDiv.classList.add("incorrect");
+        }
+        attemptFieldP.innerHTML = attempt[field];
+      }
+      if (field === "healthPoints") {
         if (attempt[field] > guessCharacterStore.dailyCharacter[field]) {
           attemptFieldSpan.classList.add("inferior");
         } else if (attempt[field] < guessCharacterStore.dailyCharacter[field]) {
           attemptFieldSpan.classList.add("superior");
         }
-        attemptFieldP.innerHTML = attempt[field];
-      } else if (field === "debut") {
-        if (
-          arcsOrder.indexOf(attempt[field]) >
-          arcsOrder.indexOf(guessCharacterStore.dailyCharacter[field])
-        ) {
-          attemptFieldSpan.classList.add("inferior");
-        } else if (
-          arcsOrder.indexOf(attempt[field]) <
-          arcsOrder.indexOf(guessCharacterStore.dailyCharacter[field])
-        ) {
-          attemptFieldSpan.classList.add("superior");
-        }
-        attemptFieldP.innerHTML = attempt[field];
-      } else {
-        attemptFieldP.innerHTML = attempt[field];
       }
       attemptFieldSpan.appendChild(attemptFieldP);
       attemptFieldDiv.appendChild(attemptFieldSpan);

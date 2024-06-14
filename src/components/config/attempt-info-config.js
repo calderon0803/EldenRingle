@@ -1,4 +1,10 @@
-export const attemptFields = ["gender", "role", "number", "country", "debut"];
+export const attemptFields = [
+  "category",
+  "location",
+  "runeDrop",
+  "itemDrop",
+  "healthPoints",
+];
 export const arcsOrder = [
   "Kid's Dream",
   "Boy's Fight",
